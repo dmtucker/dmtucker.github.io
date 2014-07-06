@@ -1,0 +1,3 @@
+[submodule "~dmtucker/vizit"]
+	path = ~dmtucker/vizit
+	url = https://github.com/dmtucker/vizit.git

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <id>urn:iweb:4C3BD463-C9A6-47F4-B47E-FD3C443BEE55</id>
+ <title>Page list Atom feed</title>
+ <updated>2011-02-02T14:17:29-08:00</updated>
+ <link rel="self" href="feed.xml"/>
+ <generator>iWeb</generator>
+ <author>
+  <name>iWeb</name>
+ </author>
+ <entry>
+  <id>urn:iweb:17864E8A-8846-4749-84C6-519490ADEE27</id>
+  <title>About Me</title>
+  <title xmlns="urn:iweb:">About Me</title>
+  <in-navbar xmlns="urn:iweb:">17864E8A-8846-4749-84C6-519490ADEE27</in-navbar>
+  <link rel="alternate" href="About_Me.html"/>
+  <updated>2011-02-02T14:17:29.001-08:00</updated>
+  <content>About Me</content>
+ </entry>
+ <entry>
+  <id>urn:iweb:930360A4-D8A8-49AB-9CF5-F236D0AFFD71</id>
+  <title>Résumé</title>
+  <title xmlns="urn:iweb:">Résumé</title>
+  <in-navbar xmlns="urn:iweb:">930360A4-D8A8-49AB-9CF5-F236D0AFFD71</in-navbar>
+  <link rel="alternate" href="Resume_files/Resume.pdf"/>
+  <updated>2011-02-02T14:17:29.002-08:00</updated>
+  <content>Résumé</content>
+ </entry>
+ <entry>
+  <id>urn:iweb:7697353E-2DD5-4D80-969C-DA817F075C6E</id>
+  <title>Portfolio</title>
+  <title xmlns="urn:iweb:">Portfolio</title>
+  <in-navbar xmlns="urn:iweb:">7697353E-2DD5-4D80-969C-DA817F075C6E</in-navbar>
+  <link rel="alternate" href="Portfolio.html"/>
+  <updated>2011-02-02T14:17:29.003-08:00</updated>
+  <content>Portfolio</content>
+ </entry>
+ <entry>
+  <id>urn:iweb:DBCDA6BB-C9AA-41D0-8CF8-1ABA3407E175</id>
+  <title>Photography</title>
+  <title xmlns="urn:iweb:">Photography</title>
+  <in-navbar xmlns="urn:iweb:">DBCDA6BB-C9AA-41D0-8CF8-1ABA3407E175</in-navbar>
+  <link rel="alternate" href="Photography.html"/>
+  <updated>2011-02-02T14:17:29.004-08:00</updated>
+  <content>Photography</content>
+ </entry>
+ <entry>
+  <id>urn:iweb:764E9A47-5DEC-489B-891A-F1B8D52B26CA</id>
+  <title>Camp Slideshow</title>
+  <title xmlns="urn:iweb:">Camp Slideshow</title>
+  <in-navbar xmlns="urn:iweb:">764E9A47-5DEC-489B-891A-F1B8D52B26CA</in-navbar>
+  <link rel="alternate" href="Camp_Slideshow.html"/>
+  <updated>2011-02-02T14:17:29.005-08:00</updated>
+  <content>Camp Slideshow</content>
+ </entry>
+</feed>
