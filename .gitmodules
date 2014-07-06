@@ -1,3 +1,3 @@
-[submodule "~dmtucker/vizit"]
-	path = ~dmtucker/vizit
+[submodule "vizit"]
+	path = vizit
 	url = https://github.com/dmtucker/vizit.git
