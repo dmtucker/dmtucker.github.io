@@ -7,6 +7,6 @@
 [submodule "portfolio/santacruzsound.com"]
 	path = portfolio/santacruzsound.com
 	url = https://github.com/dmtucker/SantaCruzSoundCompany.git
-[submodule "portfolio/saroorindiancusine.net"]
-	path = portfolio/saroorindiancusine.net
+[submodule "portfolio/saroorindiancuisine.net"]
+	path = portfolio/saroorindiancuisine.net
 	url = https://github.com/dmtucker/SaroorIndianCuisine.git
