@@ -1,3 +1,6 @@
 [submodule "vizit"]
 	path = vizit
 	url = https://github.com/dmtucker/vizit.git
+[submodule "portfolio/inner-calm.net"]
+	path = portfolio/inner-calm.net
+	url = https://github.com/dmtucker/ManagingLifeTransitions.git
