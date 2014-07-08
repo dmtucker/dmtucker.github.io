@@ -1,32 +1,130 @@
 <!DOCTYPE HTML>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>dmtucker@ucsc.edu</title>
-        <meta name="description" content="A Blog by David Tucker">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="author"  type="text/plain" href="/~dmtucker/humans.txt">
-        <link rel="license" type="text/plain" href="//www.gnu.org/licenses/gpl.txt">
-        <link rel="icon" type="image/png" href="/~dmtucker/images/brain.png">
-        <link rel="stylesheet" href="/~dmtucker/styles/normalize.min.css">
-        <link rel="stylesheet" href="/~dmtucker/styles/main.css">
-    </head>
-    <body>
-        <main role="main">
-            <h1>David Tucker</h1>
-            <article class="left" style="background-image: url('/~dmtucker/images/info.png'); background-position: 105% 105%; background-size: auto 70%;">
-                <img src="/~dmtucker/images/me.jpg" alt="David Tucker" class="framed">
+<head>
+    <meta charset="utf-8">
+    <title>dmtucker@ucsc.edu</title>
+    <meta name="description" content="A Blog by David Tucker">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="author"  type="text/plain" href="humans.txt">
+    <link rel="license" type="text/plain" href="//www.gnu.org/licenses/gpl.txt">
+    <link rel="icon" type="image/png" href="images/brain.png">
+    <link rel="stylesheet" href="styles/normalize.min.css">
+    <link rel="stylesheet" href="index.css">
+    <style>
+    article#about {
+        background-image: url('images/info.png');
+        background-position: 105% 105%;
+        background-size: auto 70%;
+    }
+
+    article#assassins {
+        background-image: url('images/crosshairs.png');
+        background-position: left center;
+        background-size: auto 200%;
+    }
+    
+    article#camp_slideshow {
+        background-image: url('//upload.wikimedia.org/wikipedia/commons/8/8d/Lake_Tahoe_NV.jpg');
+        background-size: 100% auto;
+    }
+    
+    article#links {
+        background-image: url('images/chainlink.png');
+        background-size: 5% auto;
+        background-repeat: repeat;
+        text-align: center;
+    }
+    
+    article#links > ul {
+        display: inline-block;
+        vertical-align: middle;
+        text-align: left;
+    }
+    
+    article#links > ul#articles > li {
+        float: left;
+        margin: 0 0.5em;
+        list-style: none;
+    }
+    
+    article#SDP {
+        background-image: url('//gsf.soe.ucsc.edu/static/images/fade.png');
+        background-position: center bottom;
+        background-size: 100% auto;
+    }
+    
+    article#speedtest {
+        background-image: url('images/speedometer.png');
+        background-position: left center;
+        background-size: auto 180%;
+    }
+    </style>
+</head>
+<body>
+    <main role="main">
+        <h1>David Tucker</h1>
+        <section id="status">
+            <article id="about">
+                <img src="images/me.jpg" alt="David Tucker" class="framed">
                 <h1>About</h1>
                 <p>
                     I recently graduated from <a href="//ucsc.edu/">UC Santa Cruz</a>
                     with degrees in <a href="//ua.soe.ucsc.edu/sites/default/files/CE_11-12_0.pdf">Computer Engineering</a> (concentrating in Networks)
                     and <a href="//ua.soe.ucsc.edu/sites/default/files/CS_BA_11-12.pdf">Computer Science</a>.
-                    I also have an interest in <a href="/~dmtucker/resources/security.pdf">security</a>
-                    and the <a href="/~dmtucker/resources/FLOSS.pdf">Open Source methodology</a>.
-                    Check out my <a href="/~dmtucker/resume/">r&eacute;sum&eacute;</a> for more information.
+                    I also have an interest in <a href="resources/security.pdf">security</a>
+                    and the <a href="resources/FLOSS.pdf">Open Source methodology</a>.
+                    Check out my <a href="resume/">r&eacute;sum&eacute;</a> for more information.
+                </p>
+                <img src="images/slug.png" alt="banana slug">
+            </article>
+            <article id="links">
+                <h1>Links</h1>
+                <ul>
+                    <li><a href="//github.com/dmtucker">GitHub</a></li>
+                    <li><a href="//plus.google.com/110226796811973061461">Google+</a></li>
+                    <li><a href="//twitter.com/dmtucker">Twitter</a></li>
+                </ul>
+                <ul>
+                    <li><a href="art80f/">ART 80F</a></li>
+                    <li><a href="portfolio/">Design Portfolio</a></li>
+                    <li><a href="resume/">R&eacute;sum&eacute;</a></li>
+                </ul>
+                <ul>
+                    <li><a href="portfolio/inner-calm.net/">Joyce Freeman BS, CCHT</a></li>
+                    <li><a href="portfolio/santacruzsound.com/">Santa Cruz Sound Co.</a></li>
+                    <li><a href="portfolio/saroorindiancuisine.net/">Saroor Indian Cuisine</a></li>
+                </ul>
+                <ul>
+                    <li><a href="resources/FLOSS.pdf">FLOSS</a></li>
+                    <li><a href="resources/security.pdf">Information Security</a></li>
+                </ul>
+                <hr>
+                <h2>Articles</h2>
+                <ul id="articles">
+                    <li><a href="#gjtk">GeoJSON ToolKit</a></li>
+                    <li><a href="#SDP">Senior Design Project</a></li>
+                    <li><a href="#speedtest">Ookla SPEEDTEST Personal Record</a></li>
+                    <li><a href="#sentinel">Sentinel</a></li>
+                    <li><a href="#gizmos">Gizmos</a></li>
+                    <li><a href="#camp_slideshow">Camp Concord 2010</a></li>
+                    <li><a href="#assassins">Assassins</a></li>
+                    <li><a href="#kahuna">Kahuna</a></li>
+                </ul>
+            </article>
+        </section>
+        <section id="feed">
+            <article id="gjtk">
+                <img src="images/constructocat.png" alt="constructocat">
+                <h1>GeoJSON ToolKit</h1>
+                <p>
+                    While working on my <a href="#SDP">Senior Design project</a>,
+                    I found myself wanting some simple tools for working with GeoJSON data.
+                    So, I wrote a validator and object counter and put them in a public <a href="//github.com/dmtucker/gjtk">repository</a>.
+                    There are currently <a href="//github.com/dmtucker/gjtk-py">Python</a> and <a href="//github.com/dmtucker/gjtk-js">JavaScript</a> implementations,
+                    and they are available on <a href="//pypi.python.org/pypi/gjtk">PyPI</a> and <a href="//www.npmjs.org/package/gjtk">npm</a>, respectively.
                 </p>
             </article>
-            <article class="right" style="background-image: url('//gsf.soe.ucsc.edu/static/images/fade.png'); background-position: center bottom; background-size: 100% auto;">
+            <article id="SDP">
                 <h1>Senior Design Project</h1>
                 <p>
                     In response to a proposal made by <a href="//www.llnl.gov/"><abbr title="Lawrence Livermore National Laboratory">LLNL</abbr></a>
@@ -41,54 +139,64 @@
                     More specifically, I built <a href="//github.com/dmtucker/ogre"><abbr title="OpenFusion GIS Retriever">OGRe</abbr></a>,
                     a <a href="//pypi.python.org/pypi/OGRe">library</a> for fetching data from 3rd-party APIs,
                     and <a href="//github.com/dmtucker/vizit">Vizit</a>,
-                    a <a href="/~dmtucker/vizit/?data=example/test.geojson">visualizer</a> that can render any <a href="//geojson.org/">GeoJSON</a> file.
+                    a <a href="vizit/?data=example/test.geojson">visualizer</a> that can render any <a href="//geojson.org/">GeoJSON</a> file.
                 </p>
             </article>
-            <article class="right" style="background-image: url('//sierracyclesmith.com/rides/Nevada%20Rides/images/Emerald_Bay_Lake_Tahoe.jpg'); background-size: 100% 100%;">
-                <h1>Camp Concord 2010</h1>
-                <video controls>
-                    <source src="/~dmtucker/resources/camp.m4v" type="video/mp4">
-                    Your browser does not support HTML5.
-                </video>
-            </article>
-            <article class="left">
-                <h1>Links</h1>
-                <div id="links">
-                    <ul>
-                        <li><a href="//github.com/dmtucker">GitHub</a></li>
-                        <li><a href="//plus.google.com/110226796811973061461">Google+</a></li>
-                        <li><a href="//twitter.com/dmtucker">Twitter</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="/~dmtucker/art80f/">ART 80F</a></li>
-                        <li><a href="/~dmtucker/portfolio/">Design Portfolio</a></li>
-                        <li><a href="/~dmtucker/resume/">R&eacute;sum&eacute;</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="/~dmtucker/portfolio/inner-calm.net/">Joyce Freeman BS, CCHT</a></li>
-                        <li><a href="/~dmtucker/portfolio/santacruzsound.com/">Santa Cruz Sound Co.</a></li>
-                        <li><a href="/~dmtucker/portfolio/saroorindiancuisine.net/">Saroor Indian Cuisine</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="/~dmtucker/resources/security.pdf">Information Security</a></li>
-                        <li><a href="/~dmtucker/resources/FLOSS.pdf">FLOSS</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="/~dmtucker/resources/aes.swf">Rijndael Cipher Breakdown</a></li>
-                        <li><a href="/~dmtucker/resources/animation.swf">Animator v. Animation</a></li>
-                    </ul>
-                </div>
-            </article>
-            <article class="left" id="speedtest" style="background-image: url('/~dmtucker/images/speedometer.png'); background-position: 100% 45%; background-size: 30% auto;">
+            <article id="speedtest">
                 <img src="//www.speedtest.net/result/3460664175.png" alt="93.82Mbps/67.06Mbps/29ms">
-                <h1>Ookla SPEEDTEST Record</h1>
+                <h1>Ookla SPEEDTEST Personal Record</h1>
                 <p>
                     I have never used an Internet connection faster than this!
                     This measurement was taken at UCSC in a lab in Jack Baskin Engineering.
                 </p>
             </article>
-        </main>
-        <script src="/~dmtucker/scripts/plugins.js"></script>
-        <script src="/~dmtucker/scripts/main.js"></script>
-    </body>
+            <article id="sentinel">
+                <img src="images/vault.png" alt="vault">
+                <h1>Sentinel</h1>
+                <p>
+                    While trying to devise a better way of managing passwords for many digital accounts,
+                    I came up with a memorable scheme that I implemented in an encrypted spreadsheet file.
+                    Thinking it would help more people if it were a standalone application,
+                    I created a <a href="//github.com/dmtucker/sentinel">web2py project</a> for a <a href="http://courses.soe.ucsc.edu/courses/cmps183/Fall12/01">class</a> at UCSC.
+                </p>
+                <h2>Keysmith</h2>
+                <p>
+                    I built an additional tool for Sentinel, a <a href="//github.com/dmtucker/keysmith">key generator</a>, for a <a href="//courses.soe.ucsc.edu/courses/cmps112/Winter13/01">comparative programming class</a> at UCSC.
+                    Implementations are available in <a href="//github.com/dmtucker/keysmith-c">C</a>, <a href="//github.com/dmtucker/keysmith-hs">Haskell</a>, and <a href="//github.com/dmtucker/keysmith-java">Java</a>.
+                </p>
+            </article>
+            <article id="gizmos">
+                <img src="images/motherhubbertocat.png" alt="motherhubbertocat">
+                <h1>Gizmos</h1>
+                <p>
+                    I created a <a href="//github.com/dmtucker/gizmos">repository</a> for handy scripts, applets, etc.
+                </p>
+            </article>
+            <article id="camp_slideshow">
+                <h1>Camp Concord 2010</h1>
+                <video controls>
+                    <source src="resources/camp.m4v" type="video/mp4">
+                    Your browser does not support HTML5.
+                </video>
+            </article>
+            <article id="assassins">
+                <img src="images/dojocat.png" alt="dojocat">
+                <h1>Assassins</h1>
+                <p>
+                    Looking to start a game of <a href="//en.wikipedia.org/wiki/Assassin_(game)">Assassins</a>?
+                    Here you can find some <a href="//github.com/dmtucker/assassins">resources</a> to help make it epic more quickly.
+                </p>
+            </article>
+            <article id="kahuna">
+                <img src="images/speartiki.png" alt="tiki">
+                <h1>Kahuna</h1>
+                <p>
+                    I (usually) maintain a <a href="//kahuna.escalona.us">custom-built GNU/Linux server</a> with a simple <a href="//github.com/dmtucker/kahuna">website</a>
+                </p>
+            </article>
+        </section>
+    </main>
+    <script src="scripts/plugins.js"></script>
+    <script src="index.js"></script>
+</body>
 </html>

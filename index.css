@@ -71,10 +71,18 @@ html, body, iframe {
 
 body {
     background-color: #fff;
-    background-image: url("/~dmtucker/images/colorful.jpg");
+    background-image: url("images/colorful.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+img, video {
+    max-width: 100%;
+}
+
+q:before, q:after {
+    content: '"';
 }
 
 main {
@@ -91,14 +99,18 @@ main > h1 {
     color: #3cf;
 }
 
-main article {
+main > section {
+    width: 50%;
+}
+
+main > section > article {
+    clear: both;
+    display: inline-block;
     margin-bottom: 2em;
     border-style: solid;
     border-width: 0.2em;
     border-radius: 0.5em;
     border-color: #000;
-    width: 47%;
-    max-width: 80%;
     box-shadow: 2px 4px 4px rgba(63,63,63,0.5);
     background-color: rgba(255,255,255,0.8);
     background-position: center;
@@ -107,69 +119,62 @@ main article {
     text-align: left;
 }
 
-main article.left {
-    clear: left;
-    float: left;
-    margin-left: -1em;
-    padding-left: 1.8em;
-}
-
-main article.left > img {
-    float: left;
-    margin-right: 1em;
-}
-
-main article.right {
-    clear: right;
-    float: right;
-    margin-right: -1em;
-    padding-right: 1.8em;
-}
-
-main article.right > img {
-    float: right;
-    margin-left: 1em;
-}
-
-main article > h1 {
+main > section > article > h1 {
     text-align: center;
-    font-size: 1.4em;
+    font-size: 1.6em;
 }
 
-main article > h2 {
-    font-variant:small-caps;
+main > section > article > h2 {
+    text-align: center;
+    font-variant: small-caps;
 }
 
-main article > h3 {
+main > section > article > h3 {
     text-align: center;
 }
 
-main article > img {
-    width: 16em;
-    height: auto;
-}
-
-main article > p {
+main > section > article > p {
     margin: 0;
     text-indent: 2em;
 }
 
-main article > table {
-    margin: auto;
-    width: 80%;
+main > section > article img {
+    max-width: 16em;
+    height: auto;
 }
 
-main article > ul {
+
+main > section#status {
     float: left;
+    margin-left: -1em;
+    position: fixed;
 }
 
-img, video {
-    max-width: 100%;
+main > section#feed {
+    float: right;
+    margin-right: -1em;
 }
 
-q:before, q:after {
-    content: '"';
+main > section#status > article {
+    float: left;
+    padding-left: 1.8em;
 }
+
+main > section#feed > article {
+    float: right;
+    padding-right: 1.8em;
+}
+
+main > section#status > article > img {
+    float: left;
+    margin-right: 1em;
+}
+
+main > section#feed > article > img {
+    float: right;
+    margin-left: 1em;
+}
+
 
 .framed {
     border-style: solid;
@@ -188,19 +193,6 @@ q:before, q:after {
 
 .strike {
     text-decoration: line-through;
-}
-
-#links {
-    background-image: url('/~dmtucker/images/chainlink.png');
-    background-size: 5% auto;
-    background-repeat: repeat;
-    text-align: center;
-}
-
-#links > ul {
-    display: inline-block;
-    vertical-align: middle;
-    text-align: left;
 }
 
 
