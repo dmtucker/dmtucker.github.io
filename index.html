@@ -14,7 +14,7 @@
     .sticky {
         z-index: 1;
         position: fixed;
-        /**top: 0;/**/
+        /**top: 0;  /* TODO */
     }
 
     article {
@@ -50,6 +50,7 @@
     }
     
     article#links {
+        top: 0;
         left: -1em;
         background-image: url('images/chainlink.png');
         background-size: 5% auto;
@@ -147,7 +148,7 @@
                     <li><a href="#gizmos">Gizmos</a></li>
                     <li><a href="#camp_slideshow">Camp Concord 2010</a></li>
                     <li><a href="#assassins">Assassins</a></li>
-                    <li><a href="#kahuna">Kahuna</a></li>
+                    <!--li><a href="#kahuna">Kahuna</a></li-->
                 </ul>
             </article>
         </section>
@@ -244,17 +245,17 @@
                     Here you can find some <a href="//github.com/dmtucker/assassins">resources</a> to help make it epic more quickly.
                 </p>
             </article>
-            <article id="kahuna">
+            <!--article id="kahuna">
                 <img src="images/speartiki.png" alt="tiki">
                 <h1>Kahuna</h1>
                 <p>
                     I (usually) maintain a <a href="//kahuna.escalona.us">custom-built GNU/Linux server</a> with a simple <a href="//github.com/dmtucker/kahuna">website</a>.
                 </p>
-            </article>
+            </article-->
         </section>
-        <footer>
-            <a href="#main"><img src="images/top.png" alt="Back to Top" style="height: 5em;"></a>
-        </footer>
+        <a href="#main">
+            <footer><img src="images/top.png" alt="Return to the top." style="height: 5em;"></footer>
+        </a>
     </main>
     <script src="scripts/plugins.js"></script>
     <script src="index.js"></script>
@@ -272,6 +273,7 @@
         $('#'+id).attr('data-'+stop,to);
     }
 
+    /*
     parallax(
         'links',
         threshold,
@@ -283,6 +285,7 @@
     skrollr.init({
         forceHeight: false
     });
+    */
     </script>
 </body>
 </html>
