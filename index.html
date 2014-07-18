@@ -11,10 +11,31 @@
     <link rel="stylesheet" href="styles/normalize.min.css">
     <link rel="stylesheet" href="index.css">
     <style>
+    .sticky {
+        z-index: 1;
+        position: fixed;
+        /**top: 0;/**/
+    }
+
+    article {
+        z-index: 1;
+    }
+
+    article.sticky {
+        max-width: 47%;
+        margin: 0;
+    }
+
     article#about {
         background-image: url('images/info.png');
         background-position: 105% 105%;
         background-size: auto 70%;
+    }
+    
+    article#art80f {
+        background-image: url('images/modern.png');
+        background-position: center center;
+        background-size: 100% 100%;
     }
 
     article#assassins {
@@ -29,6 +50,7 @@
     }
     
     article#links {
+        left: -1em;
         background-image: url('images/chainlink.png');
         background-size: 5% auto;
         background-repeat: repeat;
@@ -58,7 +80,21 @@
         background-position: left center;
         background-size: auto 180%;
     }
+
+    footer {
+        z-index: -1;
+        clear: both;
+        padding: 2em;
+        background-color: rgba(255,255,255,0.5);
+        text-align: center;
+    }
+
+    ul ul {
+        margin: 0;
+    }
     </style>
+    <script src="scripts/vendor/jquery-1.11.0.min.js"></script>
+    <script src="scripts/vendor/skrollr-0.6.24.min.js"></script>
 </head>
 <body>
     <main role="main">
@@ -85,14 +121,16 @@
                     <li><a href="//twitter.com/dmtucker">Twitter</a></li>
                 </ul>
                 <ul>
-                    <li><a href="art80f/">ART 80F</a></li>
-                    <li><a href="portfolio/">Design Portfolio</a></li>
+                    <li>
+                        <a href="portfolio/">Design Portfolio</a>
+                        <ul>
+                            <li><a href="portfolio/inner-calm.net/">Joyce Freeman BS, CCHT</a></li>
+                            <li><a href="portfolio/santacruzsound.com/">Santa Cruz Sound Co.</a></li>
+                            <li><a href="portfolio/saroorindiancuisine.net/">Saroor Indian Cuisine</a></li>
+                        </ul>
+                    </li>
+                    </li>
                     <li><a href="resume/">R&eacute;sum&eacute;</a></li>
-                </ul>
-                <ul>
-                    <li><a href="portfolio/inner-calm.net/">Joyce Freeman BS, CCHT</a></li>
-                    <li><a href="portfolio/santacruzsound.com/">Santa Cruz Sound Co.</a></li>
-                    <li><a href="portfolio/saroorindiancuisine.net/">Saroor Indian Cuisine</a></li>
                 </ul>
                 <ul>
                     <li><a href="resources/FLOSS.pdf">FLOSS</a></li>
@@ -102,6 +140,7 @@
                 <h2>Articles</h2>
                 <ul id="articles">
                     <li><a href="#gjtk">GeoJSON ToolKit</a></li>
+                    <li><a href="#art80f">Art 80F</a></li>
                     <li><a href="#SDP">Senior Design Project</a></li>
                     <li><a href="#speedtest">Ookla SPEEDTEST Personal Record</a></li>
                     <li><a href="#sentinel">Sentinel</a></li>
@@ -122,6 +161,24 @@
                     So, I wrote a validator and object counter and put them in a public <a href="//github.com/dmtucker/gjtk">repository</a>.
                     There are currently <a href="//github.com/dmtucker/gjtk-py">Python</a> and <a href="//github.com/dmtucker/gjtk-js">JavaScript</a> implementations,
                     and they are available on <a href="//pypi.python.org/pypi/gjtk">PyPI</a> and <a href="//www.npmjs.org/package/gjtk">npm</a>, respectively.
+                </p>
+            </article>
+            <article id="art80f">
+                <h1>Art 80F</h1>
+                <p>
+                    My final general education requirement at UC Santa Cruz was satisfied by an Introduction to Digital Media class.
+                    One of the assignments was to create a <a href="art80f/">personal web site</a> that would play home to all subsequent assignments.
+                    This blog was inspired by that creation.
+                </p>
+                <h2>Cancer Illustration</h2>
+                <p>
+                    Another significant assignment for the class was the Transdisciplinarity of Listening project which required each student to interview someone on an unfamiliar topic he or she was passionate about.
+                    Then, I had to try and teach what I learned to others using some form of digital media.
+                    I came up with an <a href="art80f/cancer/">interactive breakdown of how cancer can affect the body</a> that seemed to be very well received.
+                </p>
+                <h2>Dynamic Styling Tutorial</h2>
+                <p>
+                    For extra credit, I also gave a <a href="art80f/demo/">presentation</a> on the basics of layout rendering and the <abbr title="Document Object Model">DOM</abbr>.
                 </p>
             </article>
             <article id="SDP">
@@ -191,12 +248,41 @@
                 <img src="images/speartiki.png" alt="tiki">
                 <h1>Kahuna</h1>
                 <p>
-                    I (usually) maintain a <a href="//kahuna.escalona.us">custom-built GNU/Linux server</a> with a simple <a href="//github.com/dmtucker/kahuna">website</a>
+                    I (usually) maintain a <a href="//kahuna.escalona.us">custom-built GNU/Linux server</a> with a simple <a href="//github.com/dmtucker/kahuna">website</a>.
                 </p>
             </article>
         </section>
+        <footer>
+            <img src="images/top.png" alt="Back to Top" style="height: 5em;">
+        </footer>
     </main>
     <script src="scripts/plugins.js"></script>
     <script src="index.js"></script>
+    <script>
+    var threshold = $('#links').offset().top;
+
+    $(window).scroll(
+        function ( ) {
+            $('#links').toggleClass('sticky', $(window).scrollTop() >= threshold);
+        }
+    );
+
+    function parallax ( id , start , stop , from , to ) {
+        $('#'+id).attr('data-'+start,from);
+        $('#'+id).attr('data-'+stop,to);
+    }
+
+    parallax(
+        'links',
+        threshold,
+        $(document).height(),  //-$(window).height(), // TODO For some reason this does not work!
+        'top: 0px;',
+        'top: '+($(window).height()-$('#links').outerHeight()-$('main>footer').outerHeight())+'px;'
+    );
+
+    skrollr.init({
+        forceHeight: false
+    });
+    </script>
 </body>
 </html>

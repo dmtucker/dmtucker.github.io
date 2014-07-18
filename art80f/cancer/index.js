@@ -1,3 +1,11 @@
+function repeat ( callback , frequency ) {
+    return setInterval(callback, frequency);
+}
+
+function stop ( repeater ) {
+    clearInterval(repeater);
+}
+
 var geneID = 'myc';
 var virusGeneID = 'virusGene';
 
@@ -12,8 +20,8 @@ function makeTumor ( ) {
     tumorCellCount += 1;
     var tumorPolymeraseID = 'polymerase'+tumorCellCount.toString();
     var tumorCellID = 'cancerCell'+tumorCellCount.toString();
-    $('#hook').append('<img id="'+tumorPolymeraseID+'" class="polymerase" src="/~dmtucker/art80f/cancer/images/DNA_polymerase.png" alt="DNA Polymerase" style="width: 20em;">');
-    $('#hook').append('<img id="'+tumorCellID+'" class="cell" src="/~dmtucker/art80f/cancer/images/cell_cancer.png" alt="Cancer Cell" style="width: '+(5+(tumorRadius/2)).toString()+'em;">');
+    $('#hook').append('<img id="'+tumorPolymeraseID+'" class="polymerase" src="images/DNA_polymerase.png" alt="DNA Polymerase" style="width: 20em;">');
+    $('#hook').append('<img id="'+tumorCellID+'" class="cell" src="images/cell_cancer.png" alt="Cancer Cell" style="width: '+(5+(tumorRadius/2)).toString()+'em;">');
     $('#'+tumorCellID).css('left', '25em'); 
     $('#'+tumorCellID).css('top', '40em');
     $('#'+tumorPolymeraseID)
@@ -86,8 +94,8 @@ function removeCancer ( ) {
 function makeCell ( ) {
     var DNApolymeraseID = 'normalPolymerase';
     var cellID = 'normalCell';
-    $('#hook').append('<img id="'+DNApolymeraseID+'" class="polymerase" src="/~dmtucker/art80f/cancer/images/DNA_polymerase.png" alt="DNA Polymerase" style="width: 20em;">');
-    $('#hook').append('<img id="'+cellID+'" class="cell" src="/~dmtucker/art80f/cancer/images/cell.png" alt="Cell" style="width: 10em;">');
+    $('#hook').append('<img id="'+DNApolymeraseID+'" class="polymerase" src="images/DNA_polymerase.png" alt="DNA Polymerase" style="width: 20em;">');
+    $('#hook').append('<img id="'+cellID+'" class="cell" src="images/cell.png" alt="Cell" style="width: 10em;">');
     $('#'+DNApolymeraseID)
         .fadeIn('fast')
         .animate(
@@ -120,7 +128,7 @@ function makeCell ( ) {
 }
 
 function introduceVirusGene ( ) {
-    $('#hook').append('<img id="'+virusGeneID+'" src="/~dmtucker/art80f/cancer/images/magnet.png" alt="Virus Gene" style="width: 15em;">');
+    $('#hook').append('<img id="'+virusGeneID+'" src="images/magnet.png" alt="Virus Gene" style="width: 15em;">');
     $('#'+virusGeneID)
         .delay(500)
         .fadeIn(
@@ -135,7 +143,7 @@ function introduceVirusGene ( ) {
 
 function introduceVirusRNA ( ) {
     var virusRNAID = 'virusRNA';
-    $('#hook').append('<img id="'+virusRNAID+'" src="/~dmtucker/art80f/cancer/images/RNA.png" alt="Virus RNA" style="width: 20em;">');
+    $('#hook').append('<img id="'+virusRNAID+'" src="images/RNA.png" alt="Virus RNA" style="width: 20em;">');
     $('#'+virusRNAID)
         .fadeIn('slow',introduceVirusGene)
         .delay(1000)
@@ -149,7 +157,7 @@ function introduceVirusRNA ( ) {
 
 function introduceVirus ( ) {
     var virusID = 'virus';
-    $('#hook').append('<img id="'+virusID+'" src="/~dmtucker/art80f/cancer/images/virus.png" alt="Virus" style="width: 20em;">');
+    $('#hook').append('<img id="'+virusID+'" src="images/virus.png" alt="Virus" style="width: 20em;">');
     $('#'+virusID)
         .fadeIn('slow')
         .animate(
@@ -169,7 +177,7 @@ function introduceVirus ( ) {
 }
 
 function beginAnimation ( ) {
-    $('#hook').append('<img id="'+geneID+'" src="/~dmtucker/art80f/cancer/images/jeans.png" alt="Myc Gene" style="width: 10em;">');
+    $('#hook').append('<img id="'+geneID+'" src="images/jeans.png" alt="Myc Gene" style="width: 10em;">');
     $('#'+geneID).fadeIn('slow');
     
     $('#warning').delay(12000).fadeIn('slow');
