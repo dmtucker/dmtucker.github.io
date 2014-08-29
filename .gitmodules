@@ -1,12 +1,12 @@
 [submodule "vizit"]
 	path = vizit
 	url = https://github.com/dmtucker/vizit.git
-[submodule "portfolio/inner-calm.net"]
-	path = portfolio/inner-calm.net
-	url = https://github.com/dmtucker/ManagingLifeTransitions.git
-[submodule "portfolio/santacruzsound.com"]
-	path = portfolio/santacruzsound.com
-	url = https://github.com/dmtucker/SantaCruzSoundCompany.git
-[submodule "portfolio/saroorindiancuisine.net"]
-	path = portfolio/saroorindiancuisine.net
-	url = https://github.com/dmtucker/SaroorIndianCuisine.git
+[submodule "portfolio/SaroorIndianCuisine"]
+	path = portfolio/SaroorIndianCuisine
+	url = https://github.com/dmtucker/SaroorIndianCuisine
+[submodule "portfolio/SantaCruzSoundCompany"]
+	path = portfolio/SantaCruzSoundCompany
+	url = https://github.com/dmtucker/SantaCruzSoundCompany
+[submodule "portfolio/ManagingLifeTransitions"]
+	path = portfolio/ManagingLifeTransitions
+	url = https://github.com/dmtucker/ManagingLifeTransitions
