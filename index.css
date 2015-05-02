@@ -69,14 +69,6 @@ html, body, iframe {
     padding: 0;
 }
 
-body {
-    background-color: #fff;
-    background-image: url("images/colorful.jpg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
 img, video {
     max-width: 100%;
 }
@@ -141,38 +133,33 @@ main > section > article > p {
     text-indent: 2em;
 }
 
-main > section > article img {
-    max-width: 16em;
-    height: auto;
-}
 
-
-main > section#status {
+main > section#left {
     float: left;
     margin-left: -1em;
 }
 
-main > section#feed {
+main > section#right {
     float: right;
     margin-right: -1em;
 }
 
-main > section#status > article {
+main > section#left > article {
     float: left;
     padding-left: 1.8em;
 }
 
-main > section#feed > article {
+main > section#right > article {
     float: right;
     padding-right: 1.8em;
 }
 
-main > section#status > article > img {
+main > section#left > article > img {
     float: left;
     margin-right: 1em;
 }
 
-main > section#feed > article > img {
+main > section#right > article > img {
     float: right;
     margin-left: 1em;
 }

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>dmtucker@ucsc.edu</title>
+    <title>David Tucker</title>
     <meta name="description" content="A Blog by David Tucker">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="author"  type="text/plain" href="humans.txt">
@@ -11,25 +11,53 @@
     <link rel="stylesheet" href="styles/normalize.min.css">
     <link rel="stylesheet" href="index.css">
     <style>
+    /*
     .sticky {
         z-index: 1;
         position: fixed;
-        /**top: 0;  /* TODO */
     }
+    */
 
     article {
         z-index: 1;
     }
 
+    /*
     article.sticky {
         max-width: 47%;
         margin: 0;
     }
+    */
+
+    body {
+        background-color: #fff;
+        background-image: url("images/colorful.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    
+    div#links {
+        top: 0;
+        left: -1em;
+        background-image: url('images/chainlink.png');
+        background-size: 5% auto;
+        background-repeat: repeat;
+        text-align: center;
+    }
+    
+    div#links > ul {
+        display: inline-block;
+        vertical-align: middle;
+        text-align: left;
+    }
+
+    /**/
 
     article#about {
         background-image: url('images/info.png');
-        background-position: 105% 105%;
-        background-size: auto 70%;
+        background-position: 102% 105%;
+        background-size: auto 60%;
     }
     
     article#art80f {
@@ -45,29 +73,8 @@
     }
     
     article#camp_slideshow {
-        background-image: url('//upload.wikimedia.org/wikipedia/commons/8/8d/Lake_Tahoe_NV.jpg');
+        background-image: url('//upload.wikimedia.org/wikipedia/commons/1/1c/Blue_water,_Lake_Tahoe.jpg');
         background-size: 100% auto;
-    }
-    
-    article#links {
-        top: 0;
-        left: -1em;
-        background-image: url('images/chainlink.png');
-        background-size: 5% auto;
-        background-repeat: repeat;
-        text-align: center;
-    }
-    
-    article#links > ul {
-        display: inline-block;
-        vertical-align: middle;
-        text-align: left;
-    }
-    
-    article#links > ul#articles > li {
-        float: left;
-        margin: 0 0.5em;
-        list-style: none;
     }
     
     article#SDP {
@@ -82,6 +89,16 @@
         background-size: auto 180%;
     }
 
+    img[src='images/me.jpg'],
+    img.octocat {
+        max-width: 16em;
+        height: auto;
+    }
+
+    p.update {
+        font-style: italic;
+    }
+
     footer {
         z-index: -1;
         clear: both;
@@ -90,9 +107,6 @@
         text-align: center;
     }
 
-    ul ul {
-        margin: 0;
-    }
     </style>
     <script src="scripts/vendor/jquery-1.11.0.min.js"></script>
     <script src="scripts/vendor/skrollr-0.6.24.min.js"></script>
@@ -100,85 +114,62 @@
 <body>
     <main id="main" role="main">
         <h1>David Tucker</h1>
-        <section id="status">
+        <div id="links">
+            <h1 style="display:none;">Links</h1>
+            <ul>
+                <li><a href="//github.com/dmtucker">GitHub</a></li>
+                <li><a href="//plus.google.com/110226796811973061461">Google+</a></li>
+                <li><a href="//www.linkedin.com/in/dmtucker/">LinkedIn</a></li>
+                <li><a href="//twitter.com/dmtucker">Twitter</a></li>
+            </ul>
+            <ul>
+                <li><a href="portfolio/ManagingLifeTransitions/">Joyce Freeman BS, CCHT</a></li>
+                <li><a href="//www.santacruzsound.com/">Santa Cruz Sound Co.</a></li>
+                <li><a href="portfolio/SaroorIndianCuisine/">Saroor Indian Cuisine</a></li>
+            </ul>
+            <ul>
+                <li><a href="resources/FLOSS.pdf">FLOSS</a></li>
+                <li><a href="resources/security.pdf">Information Security</a></li>
+            </ul>
+        </div>
+        <section id="left">
             <article id="about">
                 <img src="images/me.jpg" alt="David Tucker" class="framed">
                 <h1>About</h1>
                 <p>
-                    I recently graduated from <a href="//ucsc.edu/">UC Santa Cruz</a>
+                    <img src="images/slug.png" alt="banana slug" style="float:left;">
+                    I graduated from <a href="//www.ucsc.edu/">UC Santa Cruz</a>
                     with degrees in <a href="//ua.soe.ucsc.edu/sites/default/files/CE_11-12_0.pdf">Computer Engineering</a> (concentrating in Networks)
                     and <a href="//ua.soe.ucsc.edu/sites/default/files/CS_BA_11-12.pdf">Computer Science</a>.
                     I also have an interest in <a href="resources/security.pdf">security</a>
-                    and the <a href="resources/FLOSS.pdf">Open Source methodology</a>.
-                    Check out my <a href="resume/">r&eacute;sum&eacute;</a> for more information.
+                    and <a href="resources/FLOSS.pdf">Open Source methodology</a>.<br>
+                    <br>
+                    Check out my <a href="resume/">r&eacute;sum&eacute;</a> for more about me.
                 </p>
-                <img src="images/slug.png" alt="banana slug">
             </article>
-            <article id="links">
-                <h1>Links</h1>
-                <ul>
-                    <li><a href="//github.com/dmtucker">GitHub</a></li>
-                    <li><a href="//plus.google.com/110226796811973061461">Google+</a></li>
-                    <li><a href="//twitter.com/dmtucker">Twitter</a></li>
-                </ul>
-                <ul>
-                    <li>
-                        <a href="portfolio/">Design Portfolio</a>
-                        <ul>
-                            <li><a href="portfolio/ManagingLifeTransitions/">Joyce Freeman BS, CCHT</a></li>
-                            <li><a href="//www.santacruzsound.com/">Santa Cruz Sound Co.</a></li>
-                            <li><a href="portfolio/SaroorIndianCuisine/">Saroor Indian Cuisine</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="resume/">R&eacute;sum&eacute;</a></li>
-                </ul>
-                <ul>
-                    <li><a href="resources/FLOSS.pdf">FLOSS</a></li>
-                    <li><a href="resources/security.pdf">Information Security</a></li>
-                </ul>
-                <hr>
-                <h2>Articles</h2>
-                <ul id="articles">
-                    <li><a href="#gjtk">GeoJSON ToolKit</a></li>
-                    <li><a href="#art80f">Art 80F</a></li>
-                    <li><a href="#SDP">Senior Design Project</a></li>
-                    <li><a href="#speedtest">Ookla SPEEDTEST Personal Record</a></li>
-                    <li><a href="#sentinel">Sentinel</a></li>
-                    <li><a href="#gizmos">Gizmos</a></li>
-                    <li><a href="#camp_slideshow">Camp Concord 2010</a></li>
-                    <li><a href="#assassins">Assassins</a></li>
-                    <!--li><a href="#kahuna">Kahuna</a></li-->
-                </ul>
+            <article>
+                <img src="images/setuptocat.jpg" alt="setuptocat" class="octocat">
+                <h1>Configuration Automation</h1>
+                <p>
+                    Lately, I've been working on automating the setup of my preferred working environment.
+                    It is a rather simple <a href="//github.com/dmtucker/config">project</a>, but, then again, that is usually a good thing.
+                </p>
             </article>
-        </section>
-        <section id="feed">
+            <article id="speedtest">
+                <h1>Ookla SPEEDTEST Personal Record</h1>
+                <div style="text-align:center;">
+                    <img src="//www.speedtest.net/result/4146390674.png" alt="124.61Mbps/12.11Mbps/8ms">
+                </div>
+            </article>
             <article id="gjtk">
-                <img src="images/constructocat.png" alt="constructocat">
+                <img src="images/constructocat.png" alt="constructocat" class="octocat">
                 <h1>GeoJSON ToolKit</h1>
                 <p>
                     While working on my <a href="#SDP">Senior Design project</a>,
-                    I found myself wanting some simple tools for working with GeoJSON data.
+                    I found myself wanting some simple tools for working with <a href="//geojson.org/">GeoJSON</a> data
                     So, I wrote a validator and object counter and put them in a public <a href="//github.com/dmtucker/gjtk">repository</a>.
                     There are currently <a href="//github.com/dmtucker/gjtk-py">Python</a> and <a href="//github.com/dmtucker/gjtk-js">JavaScript</a> implementations,
                     and they are available on <a href="//pypi.python.org/pypi/gjtk">PyPI</a> and <a href="//www.npmjs.org/package/gjtk">npm</a>, respectively.
-                </p>
-            </article>
-            <article id="art80f">
-                <h1>Art 80F</h1>
-                <p>
-                    My final general education requirement at UC Santa Cruz was satisfied by an Introduction to Digital Media class.
-                    One of the assignments was to create a <a href="art80f/">personal web site</a> that would play home to all subsequent assignments.
-                    This blog was inspired by that creation.
-                </p>
-                <h2>Cancer Illustration</h2>
-                <p>
-                    Another significant assignment for the class was the Transdisciplinarity of Listening project which required each student to interview someone on an unfamiliar topic he or she was passionate about.
-                    Then, I had to try and teach what I learned to others using some form of digital media.
-                    I came up with an <a href="art80f/cancer/">interactive breakdown of how cancer can affect the body</a> that seemed to be very well received.
-                </p>
-                <h2>Dynamic Styling Tutorial</h2>
-                <p>
-                    For extra credit, I also gave a <a href="art80f/demo/">presentation</a> on the basics of layout rendering and the <abbr title="Document Object Model">DOM</abbr>.
                 </p>
             </article>
             <article id="SDP">
@@ -199,23 +190,16 @@
                     a <a href="vizit/?data=example/test.geojson">visualizer</a> that can render any <a href="//geojson.org/">GeoJSON</a> file.
                 </p>
             </article>
-            <article id="speedtest">
-                <img src="//www.speedtest.net/result/3460664175.png" alt="93.82Mbps/67.06Mbps/29ms">
-                <h1>Ookla SPEEDTEST Personal Record</h1>
-                <p>
-                    I have never used an Internet connection faster than this!
-                    This measurement was taken at UCSC in a lab in Jack Baskin Engineering.
-                </p>
-            </article>
             <article id="sentinel">
-                <img src="images/vault.png" alt="vault">
+                <img src="images/vault.png" alt="vault" class="octocat">
                 <h1>Sentinel</h1>
                 <p>
                     While trying to devise a better way of managing passwords for many digital accounts,
                     I came up with a memorable scheme that I implemented in an encrypted spreadsheet file.
                     Thinking it would help more people if it were a standalone application,
-                    I created a <a href="//github.com/dmtucker/sentinel">web2py project</a> for a <a href="http://courses.soe.ucsc.edu/courses/cmps183/Fall12/01">class</a> at UCSC.
+                    I created a <a href="//github.com/dmtucker/sentinel">web2py project</a> for a <a href="//courses.soe.ucsc.edu/courses/cmps183/Fall12/01">class</a> at UCSC.
                 </p>
+                <p class="update">Update: I will not be contributing to this project any further. Turns out, I just wanted <a href="//keepass.info/">Keepass</a> all along...</p>
                 <h2>Keysmith</h2>
                 <p>
                     I built an additional tool for Sentinel, a <a href="//github.com/dmtucker/keysmith">key generator</a>, for a <a href="//courses.soe.ucsc.edu/courses/cmps112/Winter13/01">comparative programming class</a> at UCSC.
@@ -223,34 +207,51 @@
                 </p>
             </article>
             <article id="gizmos">
-                <img src="images/motherhubbertocat.png" alt="motherhubbertocat">
+                <img src="images/motherhubbertocat.png" alt="motherhubbertocat" class="octocat">
                 <h1>Gizmos</h1>
+                <p>I created a <a href="//github.com/dmtucker/gizmos">repository</a> for handy scripts, applets, etc.</p>
+            </article>
+        </section>
+        <section id="right">
+            <article id="art80f">
+                <h1>Art 80F</h1>
                 <p>
-                    I created a <a href="//github.com/dmtucker/gizmos">repository</a> for handy scripts, applets, etc.
+                    My final general education requirement at UC Santa Cruz was satisfied by an Introduction to Digital Media class.
+                    One of the assignments was to create a <a href="art80f/">personal web site</a> that would play home to all subsequent assignments.
+                    This blog was inspired by that creation.
+                </p>
+                <h2>Cancer Illustration</h2>
+                <p>
+                    Another significant assignment for the class was the Transdisciplinarity of Listening project which required each student to interview someone on an unfamiliar topic he or she was passionate about.
+                    Then, I had to try and teach what I learned to others using some form of digital media.
+                    I came up with an <a href="art80f/cancer/">interactive breakdown of how cancer can affect the body</a> that seemed to be very well received.
+                </p>
+                <h2>Dynamic Styling Tutorial</h2>
+                <p>
+                    For extra credit, I also gave a <a href="art80f/demo/">presentation</a> on the basics of layout rendering and the <abbr title="Document Object Model">DOM</abbr>.
                 </p>
             </article>
             <article id="camp_slideshow">
-                <h1>Camp Concord 2010</h1>
+                <h1 style="display:none;">Camp Concord 2010</h1>
                 <video controls>
                     <source src="resources/camp.m4v" type="video/mp4">
                     Your browser does not support HTML5.
                 </video>
             </article>
             <article id="assassins">
-                <img src="images/dojocat.png" alt="dojocat">
+                <img src="images/dojocat.png" alt="dojocat" class="octocat">
                 <h1>Assassins</h1>
                 <p>
                     Looking to start a game of <a href="//en.wikipedia.org/wiki/Assassin_(game)">Assassins</a>?
-                    Here you can find some <a href="//github.com/dmtucker/assassins">resources</a> to help make it epic more quickly.
+                    I have created some <a href="//github.com/dmtucker/assassins">resources</a> to help make it epic more quickly.
                 </p>
             </article>
-            <!--article id="kahuna">
-                <img src="images/speartiki.png" alt="tiki">
+            <article id="kahuna">
+                <a href="kahuna/" style="text-align:center;">
+                    <img src="images/speartiki.png" alt="tiki">
+                </a>
                 <h1>Kahuna</h1>
-                <p>
-                    I (usually) maintain a <a href="//kahuna.escalona.us">custom-built GNU/Linux server</a> with a simple <a href="//github.com/dmtucker/kahuna">website</a>.
-                </p>
-            </article-->
+            </article>
         </section>
         <a href="#main">
             <footer><img src="images/top.png" alt="Return to the top." style="height: 5em;"></footer>
@@ -259,6 +260,7 @@
     <script src="scripts/plugins.js"></script>
     <script src="index.js"></script>
     <script>
+    /*
     var threshold = $('#links').offset().top;
 
     $(window).scroll(
@@ -266,6 +268,7 @@
             $('#links').toggleClass('sticky', $(window).scrollTop() >= threshold);
         }
     );
+    */
 
     function parallax ( id , start , stop , from , to ) {
         $('#'+id).attr('data-'+start,from);
