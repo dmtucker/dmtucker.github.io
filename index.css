@@ -164,6 +164,96 @@ main > section#right > article > img {
     margin-left: 1em;
 }
 
+article {
+    z-index: 1;
+}
+
+body {
+    background-color: #fff;
+    background-image: url("images/tribal.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+div#links {
+    top: 0;
+    left: -1em;
+    background-image: url('images/chainlink.png');
+    background-size: 5% auto;
+    background-repeat: repeat;
+    text-align: center;
+}
+
+div#links > ul {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+}
+
+/**/
+
+article#about {
+    background-image: url('images/info.png');
+    background-position: 105% 105%;
+    background-size: auto 50%;
+}
+
+article#art80f {
+    background-image: url('images/modern.png');
+    background-position: center center;
+    background-size: 100% 100%;
+}
+
+article#assassins {
+    background-image: url('images/crosshairs.png');
+    background-position: left center;
+    background-size: auto 200%;
+}
+
+article#camp_slideshow {
+    background-image: url('//upload.wikimedia.org/wikipedia/commons/1/1c/Blue_water,_Lake_Tahoe.jpg');
+    background-size: 100% auto;
+}
+
+article#gjtk,
+article#SDP {
+    background-image: url('images/fade.png');
+    background-position: center bottom;
+    background-size: 100% auto;
+}
+
+article#speedtest {
+    background-image: url('images/speedometer.png');
+    background-position: left center;
+    background-size: auto 180%;
+}
+
+img[src='images/me.jpg'] {
+    max-width: 18em;
+    height: auto;
+}
+
+img.octocat {
+    max-width: 16em;
+    height: auto;
+}
+
+p.update {
+    font-style: italic;
+}
+
+footer {
+    z-index: -1;
+    clear: both;
+    padding: 2em;
+    background-color: rgba(255,255,255,0.5);
+    text-align: center;
+}
+
+.centered {
+    text-align: center;
+}
 
 .framed {
     border-style: solid;
