@@ -59,6 +59,11 @@ article#SDP {
     background-size: 100% auto;
 }
 
+article#kahuna img[src="images/speartiki.png"] {
+    float: left;
+    margin: 0;
+}
+
 article#portfolio img[src="images/SMD.png"],
 article#portfolio img[src="images/Joyce.png"] {
     float: left;
