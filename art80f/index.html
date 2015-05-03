@@ -2,114 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>dmtucker@ucsc.edu</title>
-    <meta name="description" content="Personal Website">
+    <title>David Tucker</title>
+    <meta name="description" content="A Blog by David Tucker">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="author"  type="text/plain" href="David Tucker">
+    <link rel="author"  type="text/plain" href="/humans.txt">
     <link rel="license" type="text/plain" href="//www.gnu.org/licenses/gpl.txt">
-    <link rel="icon" type="image/png" href="images/brain.png">
-    <link rel="stylesheet" href="styles/normalize.min.css">
+    <link rel="icon" type="image/png" href="/images/brain.png">
+    <link rel="stylesheet" href="/styles/normalize.min.css">
+    <link rel="stylesheet" href="/styles/global.css">
+    <link rel="stylesheet" href="/styles/hemispheres.css">
     <link rel="stylesheet" href="index.css">
-    <style>
-    article#links {
-        background-image: url('images/chainlink.png');
-        background-size: 5% auto;
-        background-repeat: repeat;
-        text-align: center;
-    }
-    
-    article#links > ul {
-        display: inline-block;
-        vertical-align: middle;
-        text-align: left;
-    }
-    
-    article#links > ul#articles > li {
-        float: left;
-        margin: 0 0.5em;
-        list-style: none;
-    }
-    </style>
 </head>
 <body>
-    <main role="main">
-        <h1>ART 80F</h1>
-        <section id="status">
+    <main id="main" role="main">
+        <header>
+            <h1>ART80F</h1>
+            <select id="sites" onchange="window.location.href=this.value">
+                <option value="//www.david.tucker.name/" selected="selected">www.david.tucker.name</option>
+                <option value="//www.bayfitted.com/">www.bayfitted.com</option>
+                <option value="//www.santacruzsound.com/">www.santacruzsound.com</option>
+                <option value="//www.saroorindiancuisine.com/">www.saroorindiancusine.com</option>
+            </select>
+            <select id="files" onchange="window.location.href=this.value">
+                <option disabled="disabled" selected="selected">files</option>
+            </select>
+            <select id="directories" onchange="window.location.href=this.value">
+                <option disabled="disabled" selected="selected">directories</option>
+                <option value="cancer/">Cancer Illustration</option>
+                <option value="demo/">Styling Demonstration</option>
+            </select>
+        </header>
+        <section id="left">
             <article id="avatar">
                 <h1>Avatar</h1>
                 <p>
                     This crazy thumbs-up man and I have a little history together.
-                    I originally stumbled across him while searching for visuals for a <a href="resources/FLOSS.pdf">poster project</a>.
+                    I originally stumbled across him while searching for visuals for a <a href="/resources/FLOSS.pdf">poster project</a>.
                     In the poster, he represents a developer in an Open Source community which is naturally an accurate representation of myself.
                 </p>
                 <img src="images/avatar.png" alt="Avatar">
-                <img src="images/avatar-funky.png" alt="Avatard" style="float: right; width: 20em;">
-            </article>
-            <article id="links">
-                <h1>Links</h1>
-                <ul>
-                    <li><a href="../">Author</a></li>
-                </ul>
-                <ul>
-                    <li><a href="cancer/">Cancer</a></li>
-                    <li><a href="demo/">Demonstration</a></li>
-                </ul>
-                <hr>
-                <h2>Articles</h2>
-                <ul id="articles">
-                    <li><a href="#presentation">Group Presentation</a></li>
-                    <li><a href="#critique">Critique of Practice</a></li>
-                    <li><a href="#transdisciplinarity">Transdisciplinarity of Listening</a></li>
-                    <li><a href="#demo">Basic Dynamic Styling</a></li>
-                    <li><a href="#terms">Terms &amp; Practioners</a></li>
-                    <li><a href="#review">Literature Review</a></li>
-                </ul>
-            </article>
-        </section>
-        <section id="feed">
-            <article id="presentation">
-                <h1>Group Presentation</h1>
-                <iframe src="//docs.google.com/presentation/d/1kfgKBmg5ZEeTS-CALPJbk7FlnUTWvUpWsfueDYQG_N8/embed?start=false&loop=false&delayms=3000" style="width: 50em; max-width: 100%; height: 30em;" allowfullscreen="true"></iframe>
-            </article>
-            <article id="critique">
-                <h1>Critique of Practice</h1>
-                <h2>Kara Walker</h2>
-                <p>
-                    Kara Walker uses construction paper to create silhouettes of people and places in scenes of different periods from the past.
-                    Each scene illustrates a dialectic of presence and absence while incorporating a blurry contrast between the pleasantly uplifting and the uncomfortably morbid.
-                    The dialectic, built into each scene by the medium of choice, adds a voyeuristic sense of excitement and suspense to the safety of a static image.
-                    It also alludes to a void between a scene and its context through a theme of black paper on white walls or vice versa.
-                    The difficulty in denying the presence of the topic of race and ethnicity increases as a viewer then becomes more familiar with Kara's work.
-                    She often manipulates the way in which scenes are fed to her audience in order to draw them in.
-                    Some examples of these tactics include using
-                        <span class="red strike">overhead</span>
-                        <span class="green">strategic</span>
-                    lighting to create silhouettes of viewers by projecting their shadows on the walls of her art,
-                    encompassing her viewers with
-                        <span class="red strike">circular settings that wrap around 360 degrees literally immersing</span>
-                        <span class="green">cycloramas that literally immerse</span>
-                    her audience,
-                    and relating to people by depicting scenes based on historical events.
-                    All of these ploys seem to, in some ways, encourage a kind of identity tourism perhaps with the goal of instilling a sense of understanding or connection.
-                    However, the dialectic simultaneously causes a disconnect by withholding information about the details of the symbols represented by each silhouette.
-                    In many cases, Kara has said she acknowledges a feeling of <q>avoiding the subject</q> and distance with the characters portrayed in her pieces.
-                    <span class="green">
-                    The most prominently avoided subject is racism, and it is evident in a number of ways.
-                    By using the same colored paper, Walker alludes to the topic of colorblindness, a common way to refer to the disregarding of race when interacting with others.
-                    She makes a statement that attempts to invalidate the topic through her depiction of settings that carry connotations of racism like the flora and architecture of the antebellum South.
-                    Showing that racism goes deeper than aesthetics forces a viewer to consider other factors of race and ethnicity that cause inequality.
-                    Her use of black paper to illustrate racism predominantly against blacks also introduces a sense of unsettling irony.
-                    When all of this is taken in at once, it makes a strong point about the difference between a lack of inequality and the facade of a lack.
-                    </span>
-                </p>
+                <img src="images/avatar-funky.png" alt="Avatard">
             </article>
             <article id="transdisciplinarity">
                 <h1>Transdisciplinarity of Listening</h1>
                 <p>Get a basic <a href="cancer/">semi-interactive description</a> of how cancer affects the body.</p>
-            </article>
-            <article id="demo">
-                <h1>Basic Dynamic Styling</h1>
-                <p>Check out the <a href="demo/">demonstration</a> I presented <time>2014-05-07</time> on using the CSS Box Model and the HTML DOM.</p>
             </article>
             <article id="terms">
                 <h1>Terms &amp; Practitioners</h1>
@@ -143,13 +79,13 @@
                     <dd>
                         the king of using digital media for political campaigning
                         <br>
-                        <img src="//upload.wikimedia.org/wikipedia/en/5/55/Barack_Obama_Hope_poster.jpg" alt="Hope" style="width: 30em;">
+                        <img class="hope" src="//upload.wikimedia.org/wikipedia/en/5/55/Barack_Obama_Hope_poster.jpg" alt="Hope">
                     </dd>
                     <dt>Anonymous</dt>
                     <dd>
                         <q>Don't worry, we're from the Internet.</q>
                         <br>
-                        <img src="//observatory.designobserver.com/media/images/Occupy_HOPE-500x753.gif" alt="We hope you're on our side." style="width: 30em;">
+                        <img class="hope" src="//observatory.designobserver.com/media/images/Occupy_HOPE-500x753.gif" alt="We hope you're on our side.">
                     </dd>
                     <dt><a href="//www.ted.com/">TED</a></dt>
                     <dd>
@@ -161,6 +97,48 @@
                         </video>
                     </dd>
                 </dl>
+            </article>
+        </section>
+        <section id="right">
+            <article id="presentation">
+                <h1>Group Presentation</h1>
+                <iframe src="//docs.google.com/presentation/d/1kfgKBmg5ZEeTS-CALPJbk7FlnUTWvUpWsfueDYQG_N8/embed?start=false&loop=false&delayms=3000" allowfullscreen="true"></iframe>
+            </article>
+            <article id="critique">
+                <h1>Critique of Practice</h1>
+                <h2>Kara Walker</h2>
+                <p>
+                    Kara Walker uses construction paper to create silhouettes of people and places in scenes of different periods from the past.
+                    Each scene illustrates a dialectic of presence and absence while incorporating a blurry contrast between the pleasantly uplifting and the uncomfortably morbid.
+                    The dialectic, built into each scene by the medium of choice, adds a voyeuristic sense of excitement and suspense to the safety of a static image.
+                    It also alludes to a void between a scene and its context through a theme of black paper on white walls or vice versa.
+                    The difficulty in denying the presence of the topic of race and ethnicity increases as a viewer then becomes more familiar with Kara's work.
+                    She often manipulates the way in which scenes are fed to her audience in order to draw them in.
+                    Some examples of these tactics include using
+                        <span class="red strike">overhead</span>
+                        <span class="green">strategic</span>
+                    lighting to create silhouettes of viewers by projecting their shadows on the walls of her art,
+                    encompassing her viewers with
+                        <span class="red strike">circular settings that wrap around 360 degrees literally immersing</span>
+                        <span class="green">cycloramas that literally immerse</span>
+                    her audience,
+                    and relating to people by depicting scenes based on historical events.
+                    All of these ploys seem to, in some ways, encourage a kind of identity tourism perhaps with the goal of instilling a sense of understanding or connection.
+                    However, the dialectic simultaneously causes a disconnect by withholding information about the details of the symbols represented by each silhouette.
+                    In many cases, Kara has said she acknowledges a feeling of <q>avoiding the subject</q> and distance with the characters portrayed in her pieces.
+                    <span class="green">
+                    The most prominently avoided subject is racism, and it is evident in a number of ways.
+                    By using the same colored paper, Walker alludes to the topic of colorblindness, a common way to refer to the disregarding of race when interacting with others.
+                    She makes a statement that attempts to invalidate the topic through her depiction of settings that carry connotations of racism like the flora and architecture of the antebellum South.
+                    Showing that racism goes deeper than aesthetics forces a viewer to consider other factors of race and ethnicity that cause inequality.
+                    Her use of black paper to illustrate racism predominantly against blacks also introduces a sense of unsettling irony.
+                    When all of this is taken in at once, it makes a strong point about the difference between a lack of inequality and the facade of a lack.
+                    </span>
+                </p>
+            </article>
+            <article id="demo">
+                <h1>Basic Dynamic Styling</h1>
+                <p>Check out the <a href="demo/">demonstration</a> I presented <time>2014-05-07</time> on using the CSS Box Model and the HTML DOM.</p>
             </article>
             <article id="review">
                 <h1>Literature Review</h1>
@@ -182,6 +160,7 @@
                 </p>
             </article>
         </section>
+        <footer><a href="#main"><!-- Return to the top. --></a></footer>
     </main>
 </body>
 </html>

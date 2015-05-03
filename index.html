@@ -9,33 +9,41 @@
     <link rel="license" type="text/plain" href="//www.gnu.org/licenses/gpl.txt">
     <link rel="icon" type="image/png" href="/images/brain.png">
     <link rel="stylesheet" href="/styles/normalize.min.css">
+    <link rel="stylesheet" href="/styles/global.css">
+    <link rel="stylesheet" href="/styles/hemispheres.css">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <main id="main" role="main">
-        <h1>Blog</h1>
-        <div id="links">
-            <h1 style="display:none;">Links</h1>
-            <ul>
-                <li><a href="portfolio/ManagingLifeTransitions/">Joyce Freeman BS, CCHT</a></li><!-- TODO Write an article. -->
-                <li><a href="//www.santacruzsound.com/">Santa Cruz Sound Co.</a></li><!-- TODO Write an article. -->
-                <li><a href="//www.saroorindiancuisine.com/">Saroor Indian Cuisine</a></li><!-- TODO Write an article. -->
-            </ul><ul>
-                <li><a href="#art80f">art80f</a></li>
-                <li><a href="#kahuna">kahuna</a></li>
-                <li><a href="vizit/?data=example/test.geojson">vizit</a></li>
-            </ul><ul>
-                <li><a href="resources/escalona.pdf">Escalona Beer Pong Rules</a><!-- TODO Write an article. -->
-                <li><a href="resources/FLOSS.pdf">FLOSS</a></li>
-                <li><a href="resources/security.pdf">Information Security</a></li>
-            </ul>
-        </div>
+        <header>
+            <h1>Home</h1>
+            <select id="sites" onchange="window.location.href=this.value">
+                <option value="//www.david.tucker.name/" selected="selected">www.david.tucker.name</option>
+                <option value="//www.bayfitted.com/">www.bayfitted.com</option>
+                <option value="//www.santacruzsound.com/">www.santacruzsound.com</option>
+                <option value="//www.saroorindiancuisine.com/">www.saroorindiancusine.com</option>
+            </select>
+            <select id="files" onchange="window.location.href=this.value">
+                <option disabled="disabled" selected="selected">files</option>
+                <option value="resources/escalona.pdf">Escalona Beer Pong Rules</option><!-- TODO Write an article. -->
+                <option value="resources/FLOSS.pdf">FLOSS</option>
+                <option value="resources/security.pdf">Information Security</option>
+            </select>
+            <select id="directories" onchange="window.location.href=this.value">
+                <option disabled="disabled" selected="selected">directories</option>
+                <option value="art80f/">art80f</option>
+                <option value="kahuna/">kahuna</option>
+                <option value="portfolio/">portfolio</option>
+                <option value="resume/">r&eacute;sum&eacute;</option>
+                <option value="vizit/?data=example/test.geojson">vizit</option>
+            </select>
+        </header>
         <section id="left">
             <article id="about">
                 <img src="images/me.jpg" alt="David Tucker" class="framed">
                 <h1>About</h1>
                 <p>
-                    <img src="images/slug.png" alt="banana slug" style="float:left;">
+                    <img src="images/slug.png" alt="banana slug">
                     I graduated from <a href="//www.ucsc.edu/">UC Santa Cruz</a>
                     with degrees in <a href="//ua.soe.ucsc.edu/sites/default/files/CE_11-12_0.pdf">Computer Engineering</a> (concentrating in Networks)
                     and <a href="//ua.soe.ucsc.edu/sites/default/files/CS_BA_11-12.pdf">Computer Science</a>.
@@ -51,6 +59,7 @@
                 </p>
             </article>
             <!-- Do not post anything above the About article. -->
+            <!-- TODO Write an article about your portfolio. -->
             <article>
                 <img src="images/setuptocat.png" alt="setuptocat" class="octocat">
                 <h1>Configuration Automation</h1>
@@ -90,7 +99,7 @@
                 </p>
             </article>
             <article id="sentinel">
-                <img src="images/vault.png" alt="vault" class="octocat">
+                <img src="images/vault.png" alt="vault">
                 <h1>Sentinel</h1>
                 <p>
                     While trying to devise a better way of managing passwords for many digital accounts,
@@ -129,7 +138,7 @@
                 <p>
                     Another significant assignment for the class was the Transdisciplinarity of Listening project which required each student to interview someone on an unfamiliar topic he or she was passionate about.
                     Then, I had to try and teach what I learned to others using some form of digital media.
-                    I came up with an <a href="art80f/cancer/">interactive breakdown of how cancer can affect the body</a> that seemed to be very well received.
+                    I came up with an <a href="art80f/cancer/">interactive breakdown</a> of how cancer can affect the body that seemed to be very well received.
                 </p>
                 <h2>Dynamic Styling Tutorial</h2>
                 <p>
@@ -137,7 +146,7 @@
                 </p>
             </article>
             <article id="camp_slideshow">
-                <h1 style="display:none;">Camp Concord 2010</h1>
+                <h1 class="hidden">Camp Concord 2010</h1>
                 <video controls>
                     <source src="resources/camp.m4v" type="video/mp4">
                     Your browser does not support HTML5.
@@ -152,16 +161,12 @@
                 </p>
             </article>
             <article id="kahuna">
-                <a href="kahuna/" class="centered">
-                    <img src="images/speartiki.png" alt="tiki">
-                </a>
+                <img src="images/speartiki.png" alt="tiki">
                 <h1>Kahuna</h1>
-                <!-- TODO <p></p>-->
+                <p>I basically learned by doing with computers, and <a href="kahuna/">Kahuna</a> is the machine I <em>do</em> on.</p>
             </article>
         </section>
-        <a href="#main">
-            <footer><img src="images/top.png" alt="Return to the top." style="height: 5em;"></footer>
-        </a>
+        <footer><a href="#main"><!-- Return to the top. --></a></footer>
     </main>
 </body>
 </html>
