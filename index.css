@@ -41,6 +41,12 @@ article#assassins {
     background-size: auto 200%;
 }
 
+article#beerpong {
+    background-image: url("images/beer.png");
+    background-position: center top;
+    background-size: 100% auto;
+}
+
 article#camp_slideshow {
     background-image: url("//upload.wikimedia.org/wikipedia/commons/1/1c/Blue_water,_Lake_Tahoe.jpg");
     background-size: 100% auto;
@@ -56,6 +62,19 @@ article#SDP {
 article#kahuna img[src="images/speartiki.png"] {
     float: left;
     margin: 0;
+}
+
+article#portfolio img[src="images/SMD.png"],
+article#portfolio img[src="images/Joyce.png"] {
+    float: left;
+    margin: 1em;
+    width: auto;
+    height: 10em;
+}
+
+article#portfolio img[src="images/speaker.png"] {
+    margin: 1em;
+    width: 7em;
 }
 
 article#sentinel img[src="images/vault.png"] {

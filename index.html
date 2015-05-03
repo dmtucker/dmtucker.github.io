@@ -25,14 +25,19 @@
             </select>
             <select id="files" onchange="window.location.href=this.value">
                 <option disabled="disabled" selected="selected">files</option>
-                <option value="resources/escalona.pdf">Escalona Beer Pong Rules</option><!-- TODO Write an article. -->
-                <option value="resources/FLOSS.pdf">FLOSS</option>
-                <option value="resources/security.pdf">Information Security</option>
+                <option value="resources/camp.m4v">Camp Concord 2010 Slideshow - m4v</option>
+                <option value="resources/escalona.odt">Escalona Beer Pong Rules - odt</option>
+                <option value="resources/escalona.pdf">Escalona Beer Pong Rules - pdf</option>
+                <option value="resources/FLOSS.pdf">FLOSS - pdf</option>
+                <option value="resources/HABit.odt">HABit - odt</option><!-- TODO Write an article. -->
+                <option value="resources/security.pdf">Information Security - pdf</option>
+                <option value="resources/services.pdf">Services - odt</option><!-- TODO Write an article. -->
             </select>
             <select id="directories" onchange="window.location.href=this.value">
                 <option disabled="disabled" selected="selected">directories</option>
                 <option value="art80f/">art80f</option>
                 <option value="kahuna/">kahuna</option>
+                <option value="old/">old</option>
                 <option value="portfolio/">portfolio</option>
                 <option value="resume/">r&eacute;sum&eacute;</option>
                 <option value="vizit/?data=example/test.geojson">vizit</option>
@@ -59,7 +64,6 @@
                 </p>
             </article>
             <!-- Do not post anything above the About article. -->
-            <!-- TODO Write an article about your portfolio. -->
             <article>
                 <img src="images/setuptocat.png" alt="setuptocat" class="octocat">
                 <h1>Configuration Automation</h1>
@@ -145,6 +149,10 @@
                     For extra credit, I also gave a <a href="art80f/demo/">presentation</a> on the basics of layout rendering and the <abbr title="Document Object Model">DOM</abbr>.
                 </p>
             </article>
+            <article id="beerpong">
+                <h1>Escalona Beer Pong Rules</h1>
+                <p><em>ay dawg</em>, <a href="resources/escalona.pdf">house rules</a>...</p>
+            </article>
             <article id="camp_slideshow">
                 <h1 class="hidden">Camp Concord 2010</h1>
                 <video controls>
@@ -160,10 +168,75 @@
                     I have created some <a href="//github.com/dmtucker/assassins">resources</a> to help make it epic more quickly.
                 </p>
             </article>
+            <article id="portfolio">
+                <h1>Portfolio</h1>
+                <p>
+                    I would have to say my computer self-education took a top-down approach since I got into web development first.
+                    Funny enough, <a href="//www.myspace.com/">MySpace</a> got me intersted in web technologies.
+                    HTML+CSS led me to JavaScript which eventually led to PHP, by which time I took on some simple projects for local businesses.
+                    Some of those projects are still up and running (see the <a href="#sites">site-selector</a> in the upper left corner), but, unfortunately, some are not.
+                    I keep replicas of all my sites here to perserve and showcase my work.
+                    Below is a list of sites in my <a href="portfolio/">portfolio</a> with some description of the relevant history.
+                </p>
+                <h2>Bayfitted</h2>
+                <img src="images/bayfitted.png" alt="Bayfitted logo">
+                <p>
+                    <a href="//www.bayfitted.com/">Bayfitted</a> was the first significant site that I ever built.
+                    My best friend, Ben, told me one day that his uncle, Chris, needed a website for his custom art and clothing business in San Francisco.
+                    Since Bayfitted did not already depend on a site, I could learn as I went for a real cause.
+                    Unfortunately, school and other distractions have often interfered with my ability to continuously maintain and develop the site.
+                    I intend to return to this site very soon and simplify it to appear a more put-together appearance.
+                </p>
+                <img src="images/Joyce.png" alt="Joyce Freeman">
+                <h2>Managing Life Transitions</h2>
+                <p>
+                    After my respectable success with Bayfitted, my grandmother and I decided the website she had for her Hypnotherapy practice was not worth the price she was paying.
+                    We were able to obtain the source code of her site, and I managed her web presence from then on.
+                    In mid-2012, my grandmother moved from the Bay Area to northern Arizona leaving behind her 16-year practice, but her <a href="portfolio/ManagingLifeTransitions/">website</a> is still viewable.
+                </p>
+                <h2>Saroor Indian Cuisine</h2>
+                <p>
+                    With 2 sites under belt, I was feeling pretty confident when Ben approached me again with an opportunity.
+                    He introduced me to his friend, Prince, whose parents run an Indian restaurant in Walnut Creek, CA.
+                    This time, Ben and I were pretty confident we could make some money from the deal, and we did!
+                    I agreed to build the site for $300 which I split with Ben as a finder's commission for both <a href="portfolio/SaroorIndianCuisine/">Saroor</a> and Bayfitted.
+                    Prince and I have not recently been in touch, but I have continued to keep the site up despite a migration from <a href="//www.saroorindiancuisine.net/">.net</a> to <a href="//www.saroorindiancuisine.com/">.com</a>.
+                </p>
+                <h2>Austin Tailor</h2>
+                <p>
+                    My brother, who was trying to start a business at the time, approached me for help with a website.
+                    His requirements were more than I had achieved before, but were, what I believed to be, within my reach.
+                    Balancing the beginning of my enrollment at UCSC with the development of this more advanced site challenged me in all the right ways.
+                    Unfortunately, the business never took off, but the site remains.
+                </p>
+                <img src="images/speaker.png" alt="speaker">
+                <h2>Santa Cruz Sound</h2>
+                <p>
+                    Freshman year of college, <a href="images/Krew.jpg">we</a> got <a href="images/zebra.jpg">rowdy</a>.
+                    That tends to be difficult without <a href="//www.santacruzsound.com/">great speakers</a>.
+                    I found <a href="portfolio/SantaCruzSoundCompany/">Santa Cruz Sound</a> online and correctly thought a barter was in order.
+                    For the website, we got hooked up big time... literally.
+                    I continue to maintain the site.
+                </p>
+                <img src="images/SMD.png" alt="Sigma Mu Delta Crest">
+                <h2>Sigma Mu Delta</h2>
+                <p>
+                    Sol, one of my housemates during my 2nd year of college, was a member of the &#915; chapter of &#931;&#924;&#916;, a pre-medical fraternity at UCSC.
+                    They needed some help with their website, so I worked with their webmaster to design a basic WordPress-based website that they still use today.
+                </p>
+            </article>
             <article id="kahuna">
                 <img src="images/speartiki.png" alt="tiki">
                 <h1>Kahuna</h1>
-                <p>I basically learned by doing with computers, and <a href="kahuna/">Kahuna</a> is the machine I <em>do</em> on.</p>
+                <p>
+                    I basically learned by doing with computers, and <a href="kahuna/">Kahuna</a> is the machine I <em>do</em> on.</p>
+                    It all started with a <a href="//support.toshiba.com/support/modelHome?freeText=555701">Toshiba Satellite A45-S150</a>, which I got on my (12th?) birthday.
+                    Eventually, the backlight went out on that, and I failed pretty hard by trying to replace it myself.
+                    After that I got some $300 black laptop that was straight doo-doo.
+                    It crashed on me after only a few months, at which point my dad blessed me with a proper desktop, an <a href="//h10025.www1.hp.com/ewfrf/wc/document?docname=c00838760&product=3340229">HP a1740n</a>.
+                    Although I have upgraded this machine a number of times, it is nearing retirement.
+                    Very soon, I intend to build a new workstation from scratch.
+                </p>
             </article>
         </section>
         <footer><a href="#main"><!-- Return to the top. --></a></footer>
