@@ -1,5 +1,5 @@
 body {
-    background-image: url("images/colorful.jpg");
+    background-image: url("index/colorful.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -10,7 +10,7 @@ article img {
     height: auto;
 }
 
-article#avatar img[src="images/avatar-funky.png"] {
+article#avatar img[src="index/avatar-funky.png"] {
     float: right;
 }
 
