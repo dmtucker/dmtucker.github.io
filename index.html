@@ -5,12 +5,12 @@
     <title>David Tucker</title>
     <meta name="description" content="A Blog by David Tucker">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="author"  type="text/plain" href="/humans.txt">
+    <link rel="author"  type="text/plain" href="humans.txt">
     <link rel="license" type="text/plain" href="//www.gnu.org/licenses/gpl.txt">
     <link rel="icon" type="image/png" href="/images/brain.png">
-    <link rel="stylesheet" href="/styles/normalize.min.css">
-    <link rel="stylesheet" href="/styles/global.css">
-    <link rel="stylesheet" href="/styles/hemispheres.css">
+    <link rel="stylesheet" href="resources/normalize.min.css">
+    <link rel="stylesheet" href="resources/global.css">
+    <link rel="stylesheet" href="resources/hemispheres.css">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
@@ -25,20 +25,21 @@
             </select>
             <select id="files" onchange="window.location.href=this.value">
                 <option disabled="disabled" selected="selected">files</option>
-                <option value="resources/camp.m4v">Camp Concord 2010 Slideshow - m4v</option>
-                <option value="resources/escalona.odt">Escalona Beer Pong Rules - odt</option>
-                <option value="resources/escalona.pdf">Escalona Beer Pong Rules - pdf</option>
-                <option value="resources/FLOSS.pdf">FLOSS - pdf</option>
-                <option value="resources/SDP.pdf">Geo-tagged Sensor Fusion - pdf</option>
-                <option value="resources/HABit.odt">HABit - odt</option><!-- TODO Write an article. -->
-                <option value="resources/security.pdf">Information Security - pdf</option>
-                <option value="resources/keysmith.pdf">Keysmith - pdf</option>
-                <option value="resources/OpenFusion.pdf">OpenFusion - pdf</option>
-                <option value="resources/services.odt">Services - odt</option><!-- TODO Write an article. -->
+                <option value="original/camp.m4v">Camp Concord 2010 Slideshow - m4v</option>
+                <option value="original/escalona.odt">Escalona Beer Pong Rules - odt</option>
+                <option value="original/escalona.pdf">Escalona Beer Pong Rules - pdf</option>
+                <option value="original/FLOSS.pdf">FLOSS - pdf</option>
+                <option value="original/SDP.pdf">Geo-tagged Sensor Fusion - pdf</option>
+                <option value="original/HABit.odt">HABit - odt</option><!-- TODO Write an article. -->
+                <option value="original/security.pdf">Information Security - pdf</option>
+                <option value="original/keysmith.pdf">Keysmith - pdf</option>
+                <option value="original/OpenFusion.pdf">OpenFusion - pdf</option>
+                <option value="original/services.odt">Services - odt</option><!-- TODO Write an article. -->
             </select>
             <select id="directories" onchange="window.location.href=this.value">
                 <option disabled="disabled" selected="selected">directories</option>
                 <option value="art80f/">art80f</option>
+                <option value="coins/">coins</option>
                 <option value="kahuna/">kahuna</option>
                 <option value="old/">old</option>
                 <option value="resume/">r&eacute;sum&eacute;</option>
@@ -47,27 +48,27 @@
         </header>
         <section id="left">
             <article id="about">
-                <img src="images/me.jpg" alt="David Tucker" class="framed">
+                <img src="index/me.jpg" alt="David Tucker" class="framed">
                 <h1>About</h1>
                 <p>
-                    <img src="images/slug.png" alt="banana slug">
+                    <img src="index/slug.png" alt="banana slug">
                     I graduated from <a href="//www.ucsc.edu/">UC Santa Cruz</a>
                     with degrees in <a href="//ua.soe.ucsc.edu/sites/default/files/CE_11-12_0.pdf">Computer Engineering</a> (concentrating in Networks)
                     and <a href="//ua.soe.ucsc.edu/sites/default/files/CS_BA_11-12.pdf">Computer Science</a>.
-                    I also have an interest in <a href="resources/security.pdf">security</a>
-                    and <a href="resources/FLOSS.pdf">Open Source methodology</a>.<br>
+                    I also have an interest in <a href="original/security.pdf">security</a>
+                    and <a href="original/FLOSS.pdf">Open Source methodology</a>.<br>
                     <br>
                     Check out my <a href="resume/">r&eacute;sum&eacute;</a> for more about me.<br>
                     <br>
-                    <a href="//plus.google.com/110226796811973061461"><img src="images/Google+.png" alt="Google+"></a>
-                    <a href="//www.linkedin.com/in/dmtucker/"><img src="images/LinkedIn.png" alt="LinkedIn"></a>
-                    <a href="//github.com/dmtucker"><img src="images/GitHub.png" alt="GitHub"></a>
-                    <a href="//twitter.com/dmtucker"><img src="images/Twitter.png" alt="Twitter"></a>
+                    <a href="//plus.google.com/110226796811973061461"><img src="index/Google+.png" alt="Google+"></a>
+                    <a href="//www.linkedin.com/in/dmtucker/"><img src="index/LinkedIn.png" alt="LinkedIn"></a>
+                    <a href="//github.com/dmtucker"><img src="index/GitHub.png" alt="GitHub"></a>
+                    <a href="//twitter.com/dmtucker"><img src="index/Twitter.png" alt="Twitter"></a>
                 </p>
             </article>
             <!-- Do not post anything above the About article. -->
             <article>
-                <img src="images/setuptocat.png" alt="setuptocat" class="octocat">
+                <img src="index/setuptocat.png" alt="setuptocat" class="octocat">
                 <h1>Configuration Automation</h1>
                 <p>
                     Lately, I've been working on automating the setup of my preferred working environment.
@@ -76,7 +77,7 @@
                 </p>
             </article>
             <article id="gjtk">
-                <img src="images/constructocat.png" alt="constructocat" class="octocat">
+                <img src="index/constructocat.png" alt="constructocat" class="octocat">
                 <h1>GeoJSON ToolKit</h1>
                 <p>
                     While working on my <a href="#SDP">Senior Design project</a>,
@@ -94,7 +95,7 @@
                     our team built a <a href="//itunes.apple.com/us/app/gsfdatacollecter/id886092582">mobile application</a>
                     and a <a href="//gsf.soe.ucsc.edu/">web application</a> to interface a custom pluggable sensor and a remote database.
                     Gathered data can be merged with publicly available information (e.g. <a href="//twitter.com/">Twitter</a>) to allow users to compare and relate large amounts of data.
-                    More details are available in our <a href="resources/SDP.pdf">poster</a> and <em>even more</em> in our <a href="resources/OpenFusion.pdf">report</a>.
+                    More details are available in our <a href="original/SDP.pdf">poster</a> and <em>even more</em> in our <a href="original/OpenFusion.pdf">report</a>.
                 </p>
                 <p>
                     As Fusion/Visualization Lead and Treasurer, I contributed code and graphics while managing our budget (approximately $2500).
@@ -105,7 +106,7 @@
                 </p>
             </article>
             <article id="sentinel">
-                <img src="images/vault.png" alt="vault">
+                <img src="index/vault.png" alt="vault">
                 <h1>Sentinel</h1>
                 <p>
                     While trying to devise a better way of managing passwords for many digital accounts,
@@ -116,7 +117,7 @@
                 <p class="update">Update: I will not be contributing to this project any further. Turns out, I just wanted <a href="//keepass.info/">Keepass</a> all along...</p>
                 <h2>Keysmith</h2>
                 <p>
-                    I built an additional <a href="resources/keysmith.pdf">tool</a> for Sentinel, a <a href="//github.com/dmtucker/keysmith">key generator</a>, for a <a href="//courses.soe.ucsc.edu/courses/cmps112/Winter13/01">comparative programming class</a> at UCSC.
+                    I built an additional <a href="original/keysmith.pdf">tool</a> for Sentinel, a <a href="//github.com/dmtucker/keysmith">key generator</a>, for a <a href="//courses.soe.ucsc.edu/courses/cmps112/Winter13/01">comparative programming class</a> at UCSC.
                     Implementations are available in <a href="//github.com/dmtucker/keysmith-c">C</a>, <a href="//github.com/dmtucker/keysmith-hs">Haskell</a>, and <a href="//github.com/dmtucker/keysmith-java">Java</a>.
                 </p>
             </article>
@@ -127,14 +128,14 @@
                 </div>
             </article>
             <article id="gizmos">
-                <img src="images/motherhubbertocat.png" alt="motherhubbertocat" class="octocat">
+                <img src="index/motherhubbertocat.png" alt="motherhubbertocat" class="octocat">
                 <h1>Gizmos</h1>
                 <p><a href="//github.com/dmtucker/gizmos">Handy scripts, applets, etc.</a></p>
             </article>
         </section>
         <section id="right">
             <article id="kahuna">
-                <img src="images/tiki.png" alt="tiki">
+                <img src="kahuna/tiki.png" alt="tiki">
                 <h1>Kahuna</h1>
                 <p>
                     I basically learned by doing with computers, and <a href="kahuna/">Kahuna</a> is the machine I <em>do</em> on.
@@ -176,7 +177,7 @@
                     Below is a list of sites in my portfolio with some description of the relevant history.
                 </p>
                 <h2>Bayfitted</h2>
-                <img src="images/Bayfitted.png" alt="Bayfitted logo">
+                <img src="index/Bayfitted.png" alt="Bayfitted logo">
                 <p>
                     <a href="//www.bayfitted.com/">Bayfitted</a> was the first significant site that I ever built.
                     My best friend, Ben, told me one day that his uncle, Chris, needed a website for his custom art and clothing business in San Francisco.
@@ -184,7 +185,7 @@
                     Unfortunately, school and other distractions have often interfered with my ability to continuously maintain and develop the site.
                     I intend to return to this site very soon and simplify it to appear a more put-together appearance.
                 </p>
-                <img src="images/Joyce.png" alt="Joyce Freeman">
+                <img src="index/Joyce.png" alt="Joyce Freeman">
                 <h2>Managing Life Transitions</h2>
                 <p>
                     After my respectable success with Bayfitted, my grandmother and I decided the website she had for her Hypnotherapy practice was not worth the price she was paying.
@@ -206,16 +207,16 @@
                     Balancing the beginning of my enrollment at UCSC with the development of this more advanced site challenged me in all the right ways.
                     Unfortunately, the business never took off, but the site remains.
                 </p>
-                <img src="images/speaker.png" alt="speaker">
+                <img src="index/speaker.png" alt="speaker">
                 <h2>Santa Cruz Sound</h2>
                 <p>
-                    Freshman year of college, <a href="images/Krew.jpg">we</a> got <a href="images/zebra.jpg">rowdy</a>.
+                    Freshman year of college, <a href="index/Krew.jpg">we</a> got <a href="index/zebra.jpg">rowdy</a>.
                     That tends to be difficult without <a href="//www.santacruzsound.com/">great speakers</a>.
                     I found <a href="//dmtucker.github.io/www.santacruzsound.com/">Santa Cruz Sound</a> online and correctly thought a barter was in order.
                     For the website, we got hooked up big time... literally.
                     I continue to maintain the site.
                 </p>
-                <img src="images/SMD.png" alt="Sigma Mu Delta Crest">
+                <img src="index/SMD.png" alt="Sigma Mu Delta Crest">
                 <h2>Sigma Mu Delta</h2>
                 <p>
                     Sol, one of my housemates during my 2nd year of college, was a member of the &#915; chapter of &#931;&#924;&#916;, a pre-medical fraternity at UCSC.
@@ -225,7 +226,7 @@
             <article id="beerpong">
                 <h1>Escalona Beer Pong Rules</h1>
                 <p>
-                    <em>ay dawg</em>, <a href="resources/escalona.pdf">house rules</a>...<br>
+                    <em>ay dawg</em>, <a href="original/escalona.pdf">house rules</a>...<br>
                     <em>Yes</em>, we are serious.<br>
                     <em>No</em>, you cannot do push-ups unless you are a guy.<br>
                     <em>See</em>, that wasn't so hard.<br>
@@ -235,12 +236,12 @@
             <article id="camp_slideshow">
                 <h1 class="hidden">Camp Concord 2010</h1>
                 <video controls>
-                    <source src="resources/camp.m4v" type="video/mp4">
+                    <source src="original/camp.m4v" type="video/mp4">
                     Your browser does not support HTML5.
                 </video>
             </article>
             <article id="assassins">
-                <img src="images/dojocat.png" alt="dojocat" class="octocat">
+                <img src="index/dojocat.png" alt="dojocat" class="octocat">
                 <h1>Assassins</h1>
                 <p>
                     Looking to start a game of <a href="//en.wikipedia.org/wiki/Assassin_(game)">Assassins</a>?

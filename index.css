@@ -1,5 +1,5 @@
 body {
-    background-image: url("images/tribal.png");
+    background-image: url("index/tribal.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -15,34 +15,34 @@ article > p.update {
 }
 
 article#about {
-    background-image: url("images/info.png");
+    background-image: url("index/info.png");
     background-position: 105% 105%;
     background-size: auto 50%;
 }
 
-article#about > img[src="images/me.jpg"] {
+article#about > img[src="index/me.jpg"] {
     max-width: 18em;
     height: auto;
 }
 
-article#about img[src="images/slug.png"] {
+article#about img[src="index/slug.png"] {
     float: left;
 }
 
 article#art80f {
-    background-image: url("images/modern.png");
+    background-image: url("index/modern.png");
     background-position: center center;
     background-size: 100% 100%;
 }
 
 article#assassins {
-    background-image: url("images/crosshairs.png");
+    background-image: url("index/crosshairs.png");
     background-position: right center;
     background-size: auto 200%;
 }
 
 article#beerpong {
-    background-image: url("images/beer.png");
+    background-image: url("index/beer.png");
     background-position: center top;
     background-size: 100% auto;
 }
@@ -54,37 +54,37 @@ article#camp_slideshow {
 
 article#gjtk,
 article#SDP {
-    background-image: url("images/fade.png");
+    background-image: url("index/fade.png");
     background-position: center bottom;
     background-size: 100% auto;
 }
 
-article#kahuna img[src="images/tiki.png"] {
+article#kahuna img[src="kahuna/tiki.png"] {
     float: left;
     margin: 1em 0;
 }
 
-article#portfolio img[src="images/SMD.png"],
-article#portfolio img[src="images/Joyce.png"] {
+article#portfolio img[src="index/SMD.png"],
+article#portfolio img[src="index/Joyce.png"] {
     float: left;
     margin: 1em;
     width: auto;
     height: 10em;
 }
 
-article#portfolio img[src="images/speaker.png"] {
+article#portfolio img[src="index/speaker.png"] {
     margin: 1em;
     width: 7em;
 }
 
-article#sentinel img[src="images/vault.png"] {
+article#sentinel img[src="index/vault.png"] {
     float: right;
     max-width: 16em;
     height: auto;
 }
 
 article#speedtest {
-    background-image: url("images/speedometer.png");
+    background-image: url("index/speedometer.png");
     background-position: left center;
     background-size: auto 180%;
 }
