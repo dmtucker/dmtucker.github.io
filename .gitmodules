@@ -4,3 +4,6 @@
 [submodule "art80f"]
 	path = art80f
 	url = git@github.com:dmtucker/art80f.git
+[submodule "resume"]
+	path = resume
+	url = git@github.com:dmtucker/resume.git
