@@ -21,7 +21,6 @@
 * [resume](//github.com/dmtucker/resume)
 * [sandbox](//github.com/dmtucker/sandbox)
 * [vizit](//github.com/dmtucker/vizit)
-
 * [PSoC](//github.com/dmtucker/PSoC)
 * [ancestry](//github.com/dmtucker/ancestry)
 * [factory](//github.com/dmtucker/factory)
