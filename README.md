@@ -22,6 +22,14 @@
 * [sandbox](//github.com/dmtucker/sandbox)
 * [vizit](//github.com/dmtucker/vizit)
 
+* [PSoC](//github.com/dmtucker/PSoC)
+* [ancestry](//github.com/dmtucker/ancestry)
+* [factory](//github.com/dmtucker/factory)
+* [sensus](//github.com/dmtucker/sensus)
+* [sentinel](//github.com/dmtucker/sentinel)
+* [www.gamma.sigmamudelta.org](//gitlab.com/dmtucker/www.gamma.sigmamudelta.org)
+
+
 ## inactive
 * [art80f](//github.com/dmtucker/art80f)
 * [assassins](//github.com/dmtucker/assassins)
@@ -35,11 +43,3 @@
 
 ## forks
 * [hostfileupdate](//github.com/dmtucker/hostfileupdate)
-
-## TODO _unfiled
-* [PSoC](//github.com/dmtucker/PSoC)
-* [ancestry](//github.com/dmtucker/ancestry)
-* [factory](//github.com/dmtucker/factory)
-* [sensus](//github.com/dmtucker/sensus)
-* [sentinel](//github.com/dmtucker/sentinel)
-* [www.gamma.sigmamudelta.org](//gitlab.com/dmtucker/www.gamma.sigmamudelta.org)
