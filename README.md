@@ -1,6 +1,7 @@
 # Project Statuses
 
 ## active
+* [backlog](//github.com/dmtucker/backlog)
 * [botd](//github.com/dmtucker/botd)
 * [caesar](//github.com/dmtucker/caesar)
 * [config](//github.com/dmtucker/config)
@@ -34,9 +35,9 @@
 * [assassins](//github.com/dmtucker/assassins)
 * [netsync](//github.com/dmtucker/netsync)
 * [www](//github.com/dmtucker/www)
-* [www.austintailor.com](//gitlab.com/dmtucker/www.austintailor.com) * private TODO incomplete
+* [www.austintailor.com](//gitlab.com/dmtucker/www.austintailor.com)
 * [www.bayfitted.com](//github.com/dmtucker/www.bayfitted.com)
-* [www.joycefreeman.com](//github.com/dmtucker/www.joycefreeman.com) * TODO incomplete
+* [www.joycefreeman.com](//github.com/dmtucker/www.joycefreeman.com)
 * [www.santacruzsound.com](//github.com/dmtucker/www.santacruzsound.com)
 * [www.saroorindiancuisine.com](//github.com/dmtucker/www.saroorindiancuisine.com)
 
