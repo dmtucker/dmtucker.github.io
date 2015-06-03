@@ -1,6 +1,7 @@
 # Project Statuses
 
 ## active
+* [ancestry](//github.com/dmtucker/ancestry)
 * [backlog](//github.com/dmtucker/backlog)
 * [botd](//github.com/dmtucker/botd)
 * [caesar](//github.com/dmtucker/caesar)
@@ -23,23 +24,24 @@
 * [sandbox](//github.com/dmtucker/sandbox)
 * [vizit](//github.com/dmtucker/vizit)
 * [PSoC](//github.com/dmtucker/PSoC)
-* [ancestry](//github.com/dmtucker/ancestry)
-* [factory](//github.com/dmtucker/factory)
 * [sensus](//github.com/dmtucker/sensus)
-* [sentinel](//github.com/dmtucker/sentinel)
-* [www.gamma.sigmamudelta.org](//gitlab.com/dmtucker/www.gamma.sigmamudelta.org)
+* [cs160](//github.com/dmtucker/cs160)
 
 
 ## inactive
 * [art80f](//github.com/dmtucker/art80f)
 * [assassins](//github.com/dmtucker/assassins)
 * [netsync](//github.com/dmtucker/netsync)
+* [sentinel](//github.com/dmtucker/sentinel)
 * [www](//github.com/dmtucker/www)
 * [www.austintailor.com](//gitlab.com/dmtucker/www.austintailor.com)
 * [www.bayfitted.com](//github.com/dmtucker/www.bayfitted.com)
+* [www.gamma.sigmamudelta.org](//gitlab.com/dmtucker/www.gamma.sigmamudelta.org)
 * [www.joycefreeman.com](//github.com/dmtucker/www.joycefreeman.com)
 * [www.santacruzsound.com](//github.com/dmtucker/www.santacruzsound.com)
 * [www.saroorindiancuisine.com](//github.com/dmtucker/www.saroorindiancuisine.com)
 
+
 ## forks
 * [hostfileupdate](//github.com/dmtucker/hostfileupdate)
+* [peridot](//github.com/dmtucker/peridot)
