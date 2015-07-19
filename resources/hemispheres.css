@@ -31,11 +31,7 @@ main > header > select#directories {
     float: right;
 }
 
-main > section {
-    width: 50%;
-}
-
-main > section > article {
+main article {
     clear: both;
     display: inline-block;
     z-index: 1;
@@ -52,53 +48,58 @@ main > section > article {
     text-align: left;
 }
 
-main > section > article > h1 {
+main article > h2 {
+    margin: 0.6em;
     text-align: center;
     font-size: 1.6em;
 }
 
-main > section > article > h2 {
+main article > h3 {
     text-align: center;
     font-variant: small-caps;
 }
 
-main > section > article > h3 {
+main article > h4 {
     text-align: center;
 }
 
-main > section > article > p {
+main article > p {
     margin: 0;
     text-indent: 2em;
 }
 
-main > section#left {
+main > div {
+    width: 50%;
+}
+
+main > div#left {
     clear: left;
     float: left;
     margin-left: -1em;
 }
 
-main > section#right {
+main > div#right {
     clear: right;
     float: right;
     margin-right: -1em;
 }
 
-main > section#left > article {
+main > div#left > article {
     float: left;
     padding-left: 1.8em;
 }
 
-main > section#right > article {
+main > div#right > article {
     float: right;
     padding-right: 1.8em;
 }
 
-main > section#left > article > img {
+main > div#left > article > img {
     float: left;
     margin-right: 1em;
 }
 
-main > section#right > article > img {
+main > div#right > article > img {
     float: right;
     margin-left: 1em;
 }

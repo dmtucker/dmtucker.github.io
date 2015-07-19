@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <main id="main" role="main">
+    <main id="main">
         <header>
             <h1>Home</h1>
             <select id="sites" onchange="window.location.href=this.value">
@@ -46,10 +46,10 @@
                 <option value="resume/">r&eacute;sum&eacute;</option>
             </select>
         </header>
-        <section id="left">
+        <div id="left">
             <article id="about">
                 <img src="index/me.jpg" alt="David Tucker" class="framed">
-                <h1>About</h1>
+                <h2>About</h2>
                 <p>
                     <img src="index/slug.png" alt="banana slug">
                     I graduated from <a href="http://www.ucsc.edu/">UC Santa Cruz</a>
@@ -69,7 +69,7 @@
             <!-- Do not post anything above the About article. -->
             <article id="kahuna">
                 <img src="kahuna/tiki.png" alt="tiki">
-                <h1>Kahuna</h1>
+                <h2>Kahuna</h2>
                 <p>
                     I basically learned by doing with computers, and <a href="kahuna/">Kahuna</a> is the machine I <em>do</em> on.
                     It all started with a <a href="http://support.toshiba.com/support/modelHome?freeText=555701">Toshiba Satellite A45-S150</a>, which I got on my (12th?) birthday.
@@ -81,7 +81,7 @@
                 </p>
             </article>
             <article id="portfolio">
-                <h1>Portfolio</h1>
+                <h2>Portfolio</h2>
                 <p>
                     I would have to say my computer self-education took a top-down approach since I got interested in web development first.
                     Funny enough, <a href="https://www.myspace.com/">MySpace</a> instigated my learning of HTML and CSS.
@@ -92,7 +92,7 @@
                     Below is a list of sites in my portfolio with some description of the relevant history.
                 </p>
                 <img src="index/Bayfitted.png" alt="Bayfitted logo">
-                <h2>Bayfitted</h2>
+                <h3>Bayfitted</h3>
                 <p>
                     <a href="http://www.bayfitted.com/">Bayfitted</a> was the first significant site that I ever built.
                     My good friend, Ben, told me that his uncle, Chris, needed a website for his custom art and clothing business in San Francisco.
@@ -101,13 +101,13 @@
                     Bayfitted is no longer in operation, but the <a href="http://dmtucker.github.io/www.bayfitted.com/">site</a> remains viewable.
                 </p>
                 <img src="index/Joyce.png" alt="Joyce Freeman">
-                <h2>Managing Life Transitions</h2>
+                <h3>Managing Life Transitions</h3>
                 <p>
                     After some success with Bayfitted, I convinced my grandmother that I could take over adminstration <a href="http://www.inner-calm.net/">website</a>.
                     We were able to obtain the source code of her site from the original developer, and I managed her web presence from then on.
                     In mid-2012, my grandmother moved from the Bay Area to northern Arizona leaving behind her 16-year practice, but her <a href="http://dmtucker.github.io/www.joycefreeman.com/">website</a> is still viewable.
                 </p>
-                <h2>Saroor Indian Cuisine</h2>
+                <h3>Saroor Indian Cuisine</h3>
                 <p>
                     Ben approached me again with an opportunity.
                     He introduced me to his friend, Prince, whose parents run an Indian restaurant in Walnut Creek, CA.
@@ -116,7 +116,7 @@
                     Prince and I have not recently been in touch, but I have continued to keep the site up and, until recently, even paid for the registration myself (albeit for <a href="http://www.saroorindiancuisine.com/">.com</a> instead of <a href="http://www.saroorindiancuisine.net/">.net</a>).
                     I intend to let the registration expire, but <a href="http://dmtucker.github.io/www.saroorindiancuisine.com/">the site</a> will remain viewable.
                 </p>
-                <h2>Austin Tailor</h2>
+                <h3>Austin Tailor</h3>
                 <p>
                     My brother, who was trying to start a business at the time, approached me for help with a website.
                     His requirements were more than I had achieved before, but within my reach.
@@ -124,7 +124,7 @@
                     Unfortunately, the business never took off, but the site remains (although it is not viewable because it is PHP-based, which GitHub Pages does not support).
                 </p>
                 <img src="index/speaker.png" alt="speaker">
-                <h2>Santa Cruz Sound</h2>
+                <h3>Santa Cruz Sound</h3>
                 <p>
                     Freshman year of college, <a href="index/Krew.jpg">we</a> got <a href="index/zebra.jpg">rowdy</a>.
                     That tends to be difficult without <a href="http://www.santacruzsound.com/">great speakers</a>.
@@ -132,23 +132,23 @@
                     For <a href="http://dmtucker.github.io/www.santacruzsound.com/">the website</a>, we got hooked up big time... literally.
                 </p>
                 <img src="index/SMD.png" alt="Sigma Mu Delta Crest">
-                <h2>Sigma Mu Delta</h2>
+                <h3>Sigma Mu Delta</h3>
                 <p>
                     Sol, one of my housemates during my 2nd year of college, was a member of the &#915; chapter of &#931;&#924;&#916;, a pre-medical fraternity at UCSC.
                     They needed some help with their website, so I worked with their webmaster to design a basic WordPress-based <a href="http://www.sigmamudelta-gamma.com/">website</a> that they still use today.
                 </p>
             </article>
             <article id="speedtest">
-                <h1>Ookla SPEEDTEST Personal Record</h1>
+                <h2>Ookla SPEEDTEST Personal Record</h2>
                 <div class="centered">
                     <img src="https://www.speedtest.net/result/4146390674.png" alt="124.61Mbps/12.11Mbps/8ms">
                 </div>
             </article>
-        </section>
-        <section id="right">
+        </div>
+        <div id="right">
             <article id="gjtk">
                 <img src="index/map.png" alt="map" class="octocat">
-                <h1>GeoJSON ToolKit</h1>
+                <h2>GeoJSON ToolKit</h2>
                 <p>
                     While working on my <a href="#SDP">Senior Design project</a>,
                     I found myself wanting some simple tools for working with <a href="http://geojson.org/">GeoJSON</a> data
@@ -158,7 +158,7 @@
                 </p>
             </article>
             <article id="SDP">
-                <h1>Senior Design Project</h1>
+                <h2>Senior Design Project</h2>
                 <p>
                     In response to a proposal made by <a href="https://www.llnl.gov/"><abbr title="Lawrence Livermore National Laboratory">LLNL</abbr></a>
                     for a system that could fuse data and interact with networked sensors,
@@ -176,25 +176,25 @@
                 </p>
             </article>
             <article id="art80f">
-                <h1>Art 80F</h1>
+                <h2>Art 80F</h2>
                 <p>
                     My final general education requirement at UC Santa Cruz was satisfied by an Introduction to Digital Media class.
                     One of the assignments was to create a <a href="http://dmtucker.github.io/art80f/">personal web site</a> that would play home to all subsequent assignments.
                     This blog was inspired by that creation.
                 </p>
-                <h2>Cancer Illustration</h2>
+                <h3>Cancer Illustration</h3>
                 <p>
                     Another significant assignment for the class was the Transdisciplinarity of Listening project which required each student to interview someone on an unfamiliar topic he or she was passionate about.
                     Then, I had to try and teach what I learned to others using some form of digital media.
                     I came up with an <a href="http://dmtucker.github.io/art80f/cancer/">interactive breakdown</a> of how cancer can affect the body that seemed to be very well received.
                 </p>
-                <h2>Dynamic Styling Tutorial</h2>
+                <h3>Dynamic Styling Tutorial</h3>
                 <p>
                     For extra credit, I also gave a <a href="http://dmtucker.github.io/art80f/demo/">presentation</a> on the basics of layout rendering and the <abbr title="Document Object Model">DOM</abbr>.
                 </p>
             </article>
             <article id="camp_slideshow">
-                <h1 class="hidden">Camp Concord 2010</h1>
+                <h2 class="hidden">Camp Concord 2010</h2>
                 <video controls>
                     <source src="original/camp.m4v" type="video/mp4">
                     Your browser does not support HTML5.
@@ -202,14 +202,14 @@
             </article>
             <article id="assassins">
                 <img src="index/dojocat.png" alt="dojocat" class="octocat">
-                <h1>Assassins</h1>
+                <h2>Assassins</h2>
                 <p>
                     Looking to start a game of <a href="https://en.wikipedia.org/wiki/Assassin_(game)">Assassins</a>?
                     I have created a <a href="https://github.com/dmtucker/gizmos/blob/master/targetter.py">tool for creating round orders</a> and a <a href="original/assassins.png">warrant</a>.
                     Friends and I successfully played games at my high school and college (although the dorms required some extra rules).
                 </p>
             </article>
-        </section>
+        </div>
         <footer><a href="#main"><!-- Return to the top. --></a></footer>
     </main>
 </body>
