@@ -77,12 +77,6 @@ article#portfolio img[src="index/speaker.png"] {
     width: 7em;
 }
 
-article#sentinel img[src="index/vault.png"] {
-    float: right;
-    max-width: 16em;
-    height: auto;
-}
-
 article#speedtest {
     background-image: url("index/speedometer.png");
     background-position: left center;
