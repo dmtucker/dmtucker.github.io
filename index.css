@@ -68,8 +68,8 @@ article#portfolio img[src="index/SMD.png"],
 article#portfolio img[src="index/Joyce.png"] {
     float: left;
     margin: 1em;
-    width: auto;
     height: 10em;
+    width: auto;
 }
 
 article#portfolio img[src="index/speaker.png"] {
