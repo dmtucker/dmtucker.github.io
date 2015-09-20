@@ -46,6 +46,23 @@ article#camp_slideshow {
     background-size: 100% auto;
 }
 
+article#erl-ipv6-waveg {
+    background-image: url("index/network.png");
+    background-position: center bottom;
+    background-size: 100% auto;
+    background-repeat: repeat;
+}
+
+article#erl-ipv6-waveg pre {
+    margin: 1em auto;
+    border: 2px solid black;
+    border-radius: 1em;
+    width: 80%;
+    background-color: rgba(200, 200, 200, 0.75);
+    padding: 0.5em;
+    font-size: 0.8em;
+}
+
 article#gjtk,
 article#SDP {
     background-image: url("index/fade.png");
