@@ -33,11 +33,15 @@
                 <option value="original/escalona.odt">Escalona Beer Pong Rules - odt</option>
                 <option value="original/escalona.pdf">Escalona Beer Pong Rules - pdf</option>
                 <option value="original/FLOSS.pdf">FLOSS - pdf</option>
-                <option value="original/SDP.pdf">Geo-tagged Sensor Fusion - pdf</option>
+                <option value="original/GSF.pdf">Geo-tagged Sensor Fusion - pdf</option>
                 <option value="original/HABit.odt">HABit - odt</option>
                 <option value="original/security.pdf">Information Security - pdf</option>
                 <option value="original/OpenFusion.pdf">OpenFusion - pdf</option>
-                <option value="original/services.odt">Services - odt</option>
+                <option value="original/Realization.midi">Realization - midi</option>
+                <option value="original/Realization.mp3">Realization - mp3</option>
+                <option value="original/TeamworkBlues.midi">Teamwork Blues - midi</option>
+                <option value="original/TeamworkBlues.mp3">Teamwork Blues - mp3</option>
+                <option value="original/TeamworkBlues.pdf">Teamwork Blues - pdf</option>
             </select>
             <select id="directories" onchange="window.location.href=this.value">
                 <option disabled="disabled" selected="selected">directories</option>
@@ -139,7 +143,7 @@
                 </p>
             </article>
             <article id="speedtest">
-                <h2>Ookla SPEEDTEST Personal Record</h2>
+                <h2 class="borderless">Ookla SPEEDTEST Personal Record</h2>
                 <div class="centered">
                     <img src="https://www.speedtest.net/result/4146390674.png" alt="124.61Mbps/12.11Mbps/8ms">
                 </div>
@@ -148,28 +152,9 @@
         <div id="right">
             <article id="erl-ipv6-waveg">
                 <h2>IPv6 on EdgeRouter Lite 1.7.0 with Wave G</h2>
-                <p>
-                    Shortly after moving to Seattle, I bought an <a href="https://www.ubnt.com/edgemax/edgerouter-lite/">EdgeRouter Lite</a>, and <em>I absolutely love it!</em>
-                    More recently, I moved to a building that is serviceable by <a href="http://gowaveg.com/">Wave G (formerly CondoInternet)</a> which I decided to switch to (from Comcast) for their megabit service.
-                </p>
-                <p>
-                    One difference I quickly discovered is the way each ISP deploys IPv6.
-                    There are many examples/guides for configuring EdgeRouter to work with Comcast IPv6, but those do not seem to work with Wave G.
-                    Now I know why.
-                </p>
-                <p>
-                    Comcast assigns the WAN interface an IPv6 address using stateful DHCPv6 whereas Wave G lets it configure itself using SLAAC.
-                    This is evident in the fact that, when connected to Comcast, the WAN interface receives a <code>/128</code> address (<a href="http://www.comcast6.net/index.php/ipv6-deployment-faq">source</a>) which is not possible with SLAAC.
-                    When you enable <code>dhcpv6-pd</code> on EdgeRouter, it assumes your ISP will use stateful DHCPv6 which means that getting it to work with Wave G requires a little extra configuration (namely <code>ipv6 address autoconf</code> and <code>dhcpv6-pd prefix-only</code>, EdgeRouter's "Option to not request an [sic] WAN address (no ia-na) from the DHCPv6-pd server").
-                    Note that "no ia-na" refers to <a href="https://tools.ietf.org/html/rfc3315#section-22.4">DHCPv6 IA_NA</a>, an element of stateful DHCPv6, which further corroborates the statements above.
-                </p>
-                <p>
-                    Another thing to note is that Wave G delegates <code>/60</code> prefixes.
-                    This is great because it allows you to deploy up to 16 different IPv6 subnets internally without NAT!
-                    My configuration (below) takes advantage of this by delegating a unique subnet to each of the LANs.
-                </p>
-                <h3>Configuration</h3>
-                <pre>interfaces {
+                <section>
+                    <h3>Configuration</h3>
+                    <pre>interfaces {
     ethernet eth0 {
         address 192.168.1.1/24
         description LAN
@@ -222,6 +207,27 @@
         }
     }
 }</pre>
+                </section>
+                <p>
+                    Shortly after moving to Seattle, I bought an <a href="https://www.ubnt.com/edgemax/edgerouter-lite/">EdgeRouter Lite</a>, and <em>I absolutely love it!</em>
+                    More recently, I moved to a building that is serviceable by <a href="http://gowaveg.com/">Wave G (formerly CondoInternet)</a> which I decided to switch to (from Comcast) for their megabit service.
+                </p>
+                <p>
+                    One difference I quickly discovered is the way each ISP deploys IPv6.
+                    There are many examples/guides for configuring EdgeRouter to work with Comcast IPv6, but those do not seem to work with Wave G.
+                    Now I know why.
+                </p>
+                <p>
+                    Comcast assigns the WAN interface an IPv6 address using stateful DHCPv6 whereas Wave G lets it configure itself using SLAAC.
+                    This is evident in the fact that, when connected to Comcast, the WAN interface receives a <code>/128</code> address (<a href="http://www.comcast6.net/index.php/ipv6-deployment-faq">source</a>) which is not possible with SLAAC.
+                    When you enable <code>dhcpv6-pd</code> on EdgeRouter, it assumes your ISP will use stateful DHCPv6 which means that getting it to work with Wave G requires a little extra configuration (namely <code>ipv6 address autoconf</code> and <code>dhcpv6-pd prefix-only</code>, EdgeRouter's "Option to not request an [sic] WAN address (no ia-na) from the DHCPv6-pd server").
+                    Note that "no ia-na" refers to <a href="https://tools.ietf.org/html/rfc3315#section-22.4">DHCPv6 IA_NA</a>, an element of stateful DHCPv6, which further corroborates the statements above.
+                </p>
+                <p>
+                    Another thing to note is that Wave G delegates <code>/60</code> prefixes.
+                    This is great because it allows you to deploy up to 16 different IPv6 subnets internally without NAT!
+                    My configuration takes advantage of this by delegating a unique subnet to each of the LANs.
+                </p>
                 <h4>Disclaimer</h4>
                 <p>
                     I have not provided firewall configuration details here, but that does not mean you should use IPv6 without a firewall!
@@ -232,7 +238,7 @@
             </article>
             <article id="gjtk">
                 <img src="index/map.png" alt="map" class="octocat">
-                <h2>GeoJSON ToolKit</h2>
+                <h2 class="borderless">GeoJSON ToolKit</h2>
                 <p>
                     While working on my <a href="#SDP">Senior Design project</a>,
                     I found myself wanting some simple tools for working with <a href="http://geojson.org/">GeoJSON</a> data
@@ -286,7 +292,7 @@
             </article>
             <article id="assassins">
                 <img src="index/dojocat.png" alt="dojocat" class="octocat">
-                <h2>Assassins</h2>
+                <h2 class="borderless">Assassins</h2>
                 <p>
                     Looking to start a game of <a href="https://en.wikipedia.org/wiki/Assassin_(game)">Assassins</a>?
                     I have created a <a href="https://github.com/dmtucker/gizmos/blob/master/targetter.py">tool for creating round orders</a> and a <a href="original/assassins.png">warrant</a>.
