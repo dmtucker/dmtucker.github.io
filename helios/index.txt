@@ -1,5 +1,0 @@
-PowerEdge 2900
-Service Tag: 344CLK1
-BIOS 2.7.0
-processors: 2 x 64-bit 2.66GHz Intel Xeon E5430 quad-core
-memory: 8GB DDR2 FB-DIMM 667 MHz (video memory: 16MB)

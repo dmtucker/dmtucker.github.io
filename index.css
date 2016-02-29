@@ -1,124 +1,76 @@
+
+@import url(https://fonts.googleapis.com/css?family=Cedarville+Cursive);
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
+@import url(https://fonts.googleapis.com/css?family=Meddon);
+@import url(https://fonts.googleapis.com/css?family=VT323);
+
 body {
-    background-image: url("index/tribal.png");
+    background-image: url("index/parchment.jpg");
     background-size: 100% 100%;
-    background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-article h2 {
-    border-bottom: 1px solid #ccc;
+main > a,
+main > a:link,
+main > a:hover,
+main > a:visited {
+    text-decoration: none;
+    color: black;
 }
 
-article > img.octocat {
-    max-width: 16em;
-    height: auto;
+main > header {
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 1em;
+    text-align: left;
 }
 
-article > p.update {
-    font-style: italic;
+main > header > a {
+    margin: 0.5em;
 }
 
-article#about h2 {
-    display: none;
+section {
+    clear: both;
+    padding: 1em;
+    height: 12em;
+    text-align: left;
 }
 
-article#about {
-    background-image: url("index/dtuck.png");
-    background-position: 104% 115%;
-    background-size: auto 50%;
+section > h2 {
+    margin-top: 0.75em;
+    text-align: center;
+    font-size: 4em;
 }
 
-article#about > img[src="index/me.jpg"] {
-    max-width: 16em;
-    height: auto;
+section#art80f {
+    background-image: url("http://www.publicdomainpictures.net/pictures/120000/nahled/abstract-rainbow-colors-background.jpg");
+    background-position: top center;
+    background-repeat: repeat;
+    background-size: auto 100%;
+    font-family: 'Meddon', cursive;
 }
 
-article#about img[src="index/slug.png"] {
-    float: left;
+section#coins {
+    background-image: url("index/coins.png");
+    background-position: top center;
+    background-repeat: repeat;
+    background-size: auto 100%;
+    font-family: 'Fjalla One', sans-serif;
+    text-shadow: 2px 2px white;
 }
 
-article#art80f {
+section#cosmarium {
+    background-image: url("index/devices.png");
+    background-position: top center;
+    background-repeat: repeat;
+    font-family: 'VT323', monospace;
+}
+
+section#original {
+    border-style: solid;
+    border-width: 0.2em 0;
+    border-color: black;
     background-image: url("index/modern.png");
     background-position: center center;
     background-size: 100% 100%;
-}
-
-article#assassins {
-    background-image: url("index/crosshairs.png");
-    background-position: right center;
-    background-size: auto 200%;
-}
-
-article#camp_slideshow {
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/1/1c/Blue_water,_Lake_Tahoe.jpg");
-    background-size: 100% auto;
-}
-
-article#erl-ipv6-waveg {
-    background-image: url("index/network.png");
-    background-position: center bottom;
-    background-size: 100% auto;
-    background-repeat: repeat;
-}
-
-article#erl-ipv6-waveg section {
-    float: right;
-    width: 50%;
-    text-align: center;
-}
-
-article#erl-ipv6-waveg pre {
-    margin: 1em;
-    border: 2px solid black;
-    border-radius: 1em;
-    background-color: rgba(200, 200, 200, 0.75);
-    padding: 0.5em;
-    text-align: left;
-    font-size: 0.8em;
-}
-
-article#gjtk,
-article#SDP {
-    background-image: url("index/fade.png");
-    background-position: center bottom;
-    background-size: 100% auto;
-}
-
-article#kahuna img[src="kahuna/tiki.png"] {
-    float: left;
-    margin: 1em 0;
-}
-
-article#portfolio img {
-    margin: 1em;
-}
-
-article#portfolio img[src="index/Bayfitted.png"],
-article#portfolio img[src="index/speaker.png"] {
-    float: right;
-}
-
-article#portfolio img[src="index/SMD.png"] {
-    float: left;
-}
-
-article#portfolio img[src="index/Joyce.png"],
-article#portfolio img[src="index/SMD.png"] {
-    height: 10em;
-    width: auto;
-}
-
-article#portfolio img[src="index/speaker.png"] {
-    margin: 1em;
-    width: 7em;
-}
-
-article#speedtest {
-    background-image: url("index/speedometer.png");
-    background-position: left center;
-    background-size: auto 180%;
-}
-
-.borderless {
-    border: none;
+    font-family: 'Cedarville Cursive', cursive;
 }

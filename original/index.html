@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>David Tucker Originals</title>
+    <meta name="description" content="Creations by David Tucker">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="author"  type="text/plain" href="../humans.txt">
+    <link rel="license" type="text/plain" href="https://www.gnu.org/licenses/gpl.txt">
+    <link rel="icon" type="image/png" href="../resources/brain.png">
+    <link rel="stylesheet" href="../resources/normalize.min.css">
+    <link rel="stylesheet" href="../resources/global.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index/hemispheres.css">
+</head>
+<body>
+    <main id="main">
+        <header>
+            <h1>Home</h1>
+            <select id="sites" onchange="window.location.href=this.value">
+                <option disabled="disabled" selected="selected">sites</option>
+                <option value="http://dmtucker.github.io/www.bayfitted.com/">www.bayfitted.com</option>
+                <option value="http://www.david.tucker.name/">www.david.tucker.name</option>
+                <option value="http://dmtucker.github.io/www.joycefreeman.com/">www.joycefreeman.com</option>
+                <option value="http://dmtucker.github.io/www.saroorindiancuisine.com/">www.saroorindiancuisine.com</option>
+                <option value="http://dmtucker.github.io/www.santacruzsound.com/">www.santacruzsound.com</option>
+            </select>
+            <select id="files" onchange="window.location.href=this.value">
+                <option disabled="disabled" selected="selected">files</option>
+                <option value="assassins.png">Assassins Warrant - png</option>
+                <option value="assassins.xcf">Assassins Warrant - xcf</option>
+                <option value="BazaarGovernance.pdf">Bazaar Governance - pdf</option>
+                <option value="camp.m4v">Camp Concord 2010 Slideshow - m4v</option>
+                <option value="escalona.odt">Escalona Beer Pong Rules - odt</option>
+                <option value="escalona.pdf">Escalona Beer Pong Rules - pdf</option>
+                <option value="FLOSS.pages">FLOSS - pages</option>
+                <option value="FLOSS.pdf">FLOSS - pdf</option>
+                <option value="GSF.pdf">Geo-tagged Sensor Fusion - pdf</option>
+                <option value="HABit.odt">HABit - odt</option>
+                <option value="security.key">Information Security - key</option>
+                <option value="security.pdf">Information Security - pdf</option>
+                <option value="OpenFusion.pdf">OpenFusion - pdf</option>
+                <option value="Realization.midi">Realization - midi</option>
+                <option value="Realization.mp3">Realization - mp3</option>
+                <option value="TeamworkBlues.midi">Teamwork Blues - midi</option>
+                <option value="TeamworkBlues.mp3">Teamwork Blues - mp3</option>
+                <option value="TeamworkBlues.pdf">Teamwork Blues - pdf</option>
+            </select>
+        </header>
+        <div id="left">
+            <article id="gjtk">
+                <img src="index/map.png" alt="map" class="octocat">
+                <h2 class="borderless">GeoJSON ToolKit</h2>
+                <p>
+                    While working on my <a href="#SDP">Senior Design project</a>,
+                    I found myself wanting some simple tools for working with <a href="http://geojson.org/">GeoJSON</a> data
+                    So, I wrote a validator and object counter and put them in a public <a href="https://github.com/dmtucker/gjtk">repository</a>.
+                    There are currently <a href="https://github.com/dmtucker/gjtk-py">Python</a> and <a href="https://github.com/dmtucker/gjtk-js">JavaScript</a> implementations,
+                    and they should be available on <a href="https://pypi.python.org/pypi/gjtk">PyPI</a> and <a href="https://www.npmjs.org/package/gjtk">npm</a>, respectively.
+                </p>
+            </article>
+            <article id="SDP">
+                <h2>Senior Design Project</h2>
+                <p>
+                    In response to a proposal made by <a href="https://www.llnl.gov/"><abbr title="Lawrence Livermore National Laboratory">LLNL</abbr></a>
+                    for a system that could fuse data and interact with networked sensors,
+                    our team built a <a href="https://itunes.apple.com/us/app/gsfdatacollecter/id886092582">mobile application</a>
+                    and a <a href="http://gsf.soe.ucsc.edu/">web application</a> to interface a custom pluggable sensor and a remote database.
+                    Gathered data can be merged with publicly available information (e.g. <a href="https://twitter.com/">Twitter</a>) to allow users to compare and relate large amounts of data.
+                    More details are available in our <a href="index/SDP.pdf">poster</a> and <em>even more</em> in our <a href="index/OpenFusion.pdf">report</a>.
+                </p>
+                <p>
+                    As Fusion/Visualization Lead and Treasurer, I contributed code and graphics while managing our budget (approximately $2500).
+                    More specifically, I built <a href="https://github.com/dmtucker/ogre"><abbr title="OpenFusion GIS Retriever">OGRe</abbr></a>,
+                    a <a href="https://pypi.python.org/pypi/OGRe">library</a> for fetching data from 3rd-party APIs,
+                    and <a href="https://github.com/dmtucker/vizit">Vizit</a>,
+                    a <a href="http://dmtucker.github.io/vizit/?data=example/test.geojson">visualizer</a> that can render any <a href="http://geojson.org/">GeoJSON</a> file.
+                </p>
+            </article>
+        </div>
+        <div id="right">
+            <article id="camp_slideshow">
+                <h2 class="hidden">Camp Concord 2010</h2>
+                <video controls>
+                    <source src="camp.m4v" type="video/mp4">
+                    Your browser does not support HTML5.
+                </video>
+            </article>
+            <article id="assassins">
+                <img src="index/dojocat.png" alt="dojocat" class="octocat">
+                <h2 class="borderless">Assassins</h2>
+                <p>
+                    Looking to start a game of <a href="https://en.wikipedia.org/wiki/Assassin_(game)">Assassins</a>?
+                    I have created a <a href="https://github.com/dmtucker/gizmos/blob/master/targetter.py">tool for creating round orders</a> and a <a href="assassins.png">warrant</a>.
+                    Friends and I successfully played games at my high school and college (although the dorms required some extra rules).
+                </p>
+            </article>
+        </div>
+        <footer><a href="#main"><!-- Return to the top. --></a></footer>
+    </main>
+</body>
+</html>
