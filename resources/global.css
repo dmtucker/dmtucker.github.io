@@ -64,35 +64,8 @@ textarea {
     border: none;
 }
 
-.hidden {
-    display: none;
-}
-
 .invisible {
     visibility: hidden;
-}
-
-.framed {
-    border-style: solid;
-    border-width: 0.4em;
-    border-radius: 0.5em;
-    border-color: #000;
-}
-
-.centered {
-    text-align: center;
-}
-
-.green {
-    color: green;
-}
-
-.red {
-    color: red;
-}
-
-.strike {
-    text-decoration: line-through;
 }
 
 html, body, iframe {
