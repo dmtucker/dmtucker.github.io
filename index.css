@@ -1,5 +1,6 @@
 
 @import url(https://fonts.googleapis.com/css?family=Cedarville+Cursive);
+@import url(https://fonts.googleapis.com/css?family=Ruthie);
 @import url(https://fonts.googleapis.com/css?family=VT323);
 
 body {
@@ -28,8 +29,11 @@ main > header > * {
 
 section {
     clear: both;
+    border-style: solid;
+    border-width: 0 0 0.2em 0;
+    border-color: black;
+    height: 18em;
     padding: 1em;
-    height: 16em;
 }
 
 section#cosmarium {
@@ -40,16 +44,20 @@ section#cosmarium {
 }
 
 section#original {
-    border-style: solid;
-    border-width: 0.2em 0;
-    border-color: black;
     background-image: url("index/modern.png");
     background-position: center center;
     background-size: 100% 100%;
     font-family: 'Cedarville Cursive', cursive;
 }
 
+section#adventures {
+    background-image: url("http://elderscrollsonline.wiki.fextralife.com/file/view/Eastmarch%20Treasure%20Map%20V.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    font-family: 'Ruthie', cursive;
+}
+
 section > h2 {
     text-align: center;
-    font-size: 5em;
+    font-size: 6em;
 }
