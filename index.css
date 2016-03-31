@@ -1,7 +1,5 @@
 
 @import url(https://fonts.googleapis.com/css?family=Cedarville+Cursive);
-@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
-@import url(https://fonts.googleapis.com/css?family=Meddon);
 @import url(https://fonts.googleapis.com/css?family=VT323);
 
 body {
@@ -39,23 +37,6 @@ section > h2 {
     margin-top: 0.75em;
     text-align: center;
     font-size: 4em;
-}
-
-section#art80f {
-    background-image: url("http://www.publicdomainpictures.net/pictures/120000/nahled/abstract-rainbow-colors-background.jpg");
-    background-position: top center;
-    background-repeat: repeat;
-    background-size: auto 100%;
-    font-family: 'Meddon', cursive;
-}
-
-section#coins {
-    background-image: url("index/coins.png");
-    background-position: top center;
-    background-repeat: repeat;
-    background-size: auto 100%;
-    font-family: 'Fjalla One', sans-serif;
-    text-shadow: 2px 2px white;
 }
 
 section#cosmarium {
