@@ -22,27 +22,20 @@ main > header {
     text-align: left;
 }
 
-main > header > a {
+main > header > * {
     margin: 0.5em;
 }
 
 section {
     clear: both;
     padding: 1em;
-    height: 12em;
-    text-align: left;
-}
-
-section > h2 {
-    margin-top: 0.75em;
-    text-align: center;
-    font-size: 4em;
+    height: 16em;
 }
 
 section#cosmarium {
-    background-image: url("index/devices.png");
-    background-position: top center;
-    background-repeat: repeat;
+    background-image: url("index/pixels.png");
+    background-position: center center;
+    background-size: 33.34% auto;
     font-family: 'VT323', monospace;
 }
 
@@ -54,4 +47,9 @@ section#original {
     background-position: center center;
     background-size: 100% 100%;
     font-family: 'Cedarville Cursive', cursive;
+}
+
+section > h2 {
+    text-align: center;
+    font-size: 5em;
 }
