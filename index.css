@@ -39,7 +39,8 @@ section {
 section#cosmarium {
     background-image: url("index/pixels.png");
     background-position: center center;
-    background-size: 33.34% auto;
+    background-size: 33.34% 100%;
+    background-repeat: repeat-x;
     font-family: 'VT323', monospace;
 }
 
@@ -51,7 +52,7 @@ section#original {
 }
 
 section#adventures {
-    background-image: url("http://elderscrollsonline.wiki.fextralife.com/file/view/Eastmarch%20Treasure%20Map%20V.png");
+    background-image: url("index/map.png");
     background-position: top center;
     background-repeat: no-repeat;
     font-family: 'Ruthie', cursive;
