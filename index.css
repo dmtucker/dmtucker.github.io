@@ -1,6 +1,5 @@
 
 @import url(https://fonts.googleapis.com/css?family=Cedarville+Cursive);
-@import url(https://fonts.googleapis.com/css?family=Ruthie);
 @import url(https://fonts.googleapis.com/css?family=VT323);
 
 body {
@@ -49,13 +48,6 @@ section#original {
     background-position: center center;
     background-size: 100% 100%;
     font-family: 'Cedarville Cursive', cursive;
-}
-
-section#adventures {
-    background-image: url("index/map.png");
-    background-position: top center;
-    background-repeat: no-repeat;
-    font-family: 'Ruthie', cursive;
 }
 
 section > h2 {
