@@ -1,0 +1,416 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+html, body, iframe {
+    border: none;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+body {
+    background-color: #fff;
+    background-image: url("images/DNA.png"), url("images/DNA_tile.png");
+    background-size: 40% auto, auto;
+    background-repeat: no-repeat, repeat-y;
+    background-attachment: fixed, fixed;
+}
+
+img, video {
+    max-width: 100%;
+}
+
+q:before, q:after {
+    content: '"';
+}
+
+main {
+    overflow-x: hidden;
+}
+
+main > h1 {
+    clear: both;
+    margin: 0 0 1em 0;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+    text-transform: lowercase;
+    font-family: sans-serif;
+    color: #3cf;
+    
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
+
+main > section {
+    width: 50%;
+    margin-bottom: 40em;
+}
+
+main > section > article {
+    clear: both;
+    display: inline-block;
+    margin-bottom: 2em;
+    border-style: solid;
+    border-width: 0.2em;
+    border-radius: 0.5em;
+    border-color: #000;
+    box-shadow: 2px 4px 4px rgba(63,63,63,0.5);
+    background-color: rgba(255,255,255,0.8);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 1em;
+    text-align: left;
+}
+
+main > section > article > h1 {
+    text-align: center;
+    font-size: 1.6em;
+}
+
+main > section > article > h2 {
+    text-align: center;
+    font-variant: small-caps;
+}
+
+main > section > article > h3 {
+    text-align: center;
+}
+
+main > section > article > p {
+    margin: 0;
+    text-indent: 2em;
+}
+
+main > section > article img {
+    max-width: 16em;
+    height: auto;
+}
+
+
+main > section#status {
+    float: left;
+    margin-left: -1em;
+}
+
+main > section#feed {
+    float: right;
+    margin-right: -1em;
+}
+
+main > section#status > article {
+    float: left;
+    padding-left: 1.8em;
+}
+
+main > section#feed > article {
+    float: right;
+    padding-right: 1.8em;
+}
+
+main > section#status > article > img {
+    float: left;
+    margin-right: 1em;
+}
+
+main > section#feed > article > img {
+    float: right;
+    margin-left: 1em;
+}
+
+
+.framed {
+    border-style: solid;
+    border-width: 0.4em;
+    border-radius: 0.5em;
+    border-color: #000;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+.strike {
+    text-decoration: line-through;
+}
+
+
+
+main > section#feed > h1 {
+    margin-top: 2em;
+}
+
+main > section#feed > img {
+    background-color: rgba(255,255,255,0.75);
+    display: block;
+    clear: right;
+    margin: 2em;
+}
+
+main > section#feed > article {
+    padding-right: 15em;
+}
+
+main > section#feed > p {
+    padding-right: 10em;
+}
+
+hr {
+    clear: both;
+}
+
+.polymerase, .cell, #myc, #virus, #virusRNA, #virusGene {
+    display: none;
+    position: fixed;
+}
+
+.polymerase {
+    top: -5em;
+    left: 20em;
+    z-index: 10
+}
+
+.cell {
+    top: 40em;
+    left: 25em;
+    z-index: 100;
+}
+
+#myc {
+    top: 40em;
+    left: 22em;
+}
+
+#normalCell {
+    z-index: 1000;
+}
+
+#virus {
+    top: -5em;
+    left: 120em;
+    z-index: 1;
+}
+
+#virusRNA {
+    top: 24em;
+    left: 18em;
+}
+
+#virusGene {
+    top: 24em;
+    left: 20em;
+}
+
+#warning {
+    display: none;
+}
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

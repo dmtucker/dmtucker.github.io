@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Basic Dynamic Styling</title>
+        <meta name="description" content="CSS Box Model and JS DOM Demonstration">
+        <link rel="icon" href="img/brain.png">
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        
+        <!-- Ignore the script below for now. -->
+        <script>
+        window.onload = function ( ) {
+            var code = document.getElementsByTagName('code')[0];
+            var script = code.innerText.split(';');
+            code.innerHTML = '';
+            for (var i in script) {
+                if (script[i].length > 0) {
+                    code.innerHTML += script[i]+';<br>';
+                }
+            }
+            var inline = document.getElementsByTagName('code')[1];
+            inline.innerText = '<script>\n'+code.innerText+'<'+'/script>';
+            document.getElementsByTagName('body')[0].style.paddingBottom = '10em';
+        };
+        function resetPage ( ) {
+            document.getElementById('box-model-box').innerText='This is where the text goes!';
+            document.getElementById('invisible-element').style.display='none';
+        }
+        </script>
+        <!-- It's only here to make the output look prettier. -->
+    </head>
+    <body>
+        <h1>Rendering HTML Elements</h1>
+        
+        <!-- The way an element is displayed determines how it interacts with other elements. -->
+        <!--img src="//www.google.com/images/srpr/logo11w.png" alt="Google" style="float: left;"-->
+        <p>I am a normal paragraph (displayed as a block element).</p>
+        <p style="display: inline;">I am an inline paragraph.</p>
+        <!-- Try uncommenting the image above. -->
+        
+        <h2>div vs. span</h2>
+        
+        <!-- For example, div tags are typically rendered as block elements whereas spans are usually inline. -->
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <span class="highlight">Cras urna nisl</span>, molestie ac consectetur vitae, placerat eget elit. Quisque at pulvinar mi, eu pellentesque metus. Pellentesque consectetur varius risus sodales suscipit. Nunc volutpat sem risus, quis laoreet velit placerat eu. Pellentesque ac ornare diam. Proin tempor orci in pharetra tristique. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+            Aliquam in faucibus purus</div>, vel scelerisque nisl. Duis eget aliquam urna, nec molestie ipsum. Nullam malesuada, massa id accumsan hendrerit, risus purus gravida mauris, nec faucibus sapien purus ut arcu. Aenean nibh erat, euismod ut tortor ut, sodales feugiat odio. Cras nec dolor lacus. Maecenas malesuada, justo vel rhoncus interdum, felis elit venenatis odio, ac ultrices arcu ante sit amet ante. Donec felis eros, sodales et justo commodo, euismod pellentesque purus. Aenean orci lectus, facilisis nec diam quis, dapibus vehicula tortor. Proin ut augue at est tempor euismod sed vitae orci. Maecenas hendrerit dignissim magna, eu gravida nisl bibendum ut. Ut in ornare neque. Donec vehicula, eros sodales sodales interdum, nisi elit blandit orci, id eleifend nibh felis nec dolor. Vestibulum tellus nibh, facilisis vitae blandit at, varius sit amet leo.
+            Nullam in orci metus. Proin vulputate velit tristique justo sodales malesuada. Nunc vitae velit at ligula auctor consequat non in ipsum. In eget tempor nunc. Nullam ut purus dignissim, volutpat neque id, eleifend elit. Maecenas congue ac purus quis luctus. Nunc vel risus volutpat, aliquam massa in, ultrices odio. Duis ut elementum velit. Fusce consectetur ac urna eget commodo. In diam erat, tempor a laoreet eget, suscipit sed sapien. Pellentesque eu aliquet tortor. Vivamus facilisis dolor ut ornare convallis. Aliquam quam libero, scelerisque at sem sed, dapibus posuere felis. Duis semper venenatis sem. Morbi ultricies diam vel elit tristique, id convallis dui suscipit. Maecenas lectus urna, lacinia non mollis non, tempus id ante.
+            Integer quis aliquet ligula. Sed in leo tortor. Etiam posuere, dolor sed cursus luctus, magna ante egestas elit, sollicitudin egestas velit lorem ac nisl. Aenean nec mauris et lacus semper eleifend et et sapien. Cras hendrerit velit magna, quis mollis dui lacinia hendrerit. Aenean a turpis sapien. Proin nec arcu neque. Mauris dolor massa, mollis a placerat at, elementum sit amet augue. Mauris lacinia nisi non dolor feugiat, in pharetra nulla faucibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. In ac metus in quam cursus suscipit vel nec arcu. Duis hendrerit venenatis erat vel varius. Morbi sed justo et erat sagittis blandit at sit amet quam.
+            Maecenas est tellus, faucibus eget rhoncus eu, pharetra et nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur libero urna, placerat eget vulputate a, faucibus a velit. Aenean hendrerit dolor vitae mollis elementum. Integer non euismod felis. Pellentesque ac ultricies magna. Quisque dignissim varius lorem sit amet consequat. Aenean fermentum sem nisi, a consequat diam aliquam quis.
+        </p>
+        <!--  Try changing span to div in the paragraph above. -->
+        
+        <h1>CSS Box Model</h1>
+        
+        <!-- Here is an illustration of the CSS Box Model. -->
+        <hr>
+        <div id="box-model-container">
+            <div id="box-model-box">This is where the text goes!</div>
+        </div>
+        <hr>
+        <!-- Element inspection can also make the box model visible. -->
+        
+        <h1>DOM Demonstration</h1>
+        
+        <!-- Ignore this for now. -->
+        <div id="invisible-element" style="display: none;">WHAT THA EFF DAVID BLAINE?!</div>
+        <!-- Just because it doesn't show up doesn't mean it's not there! -->
+        
+        <h2>Console</h2>
+        
+        <!-- Every element can be manipulated using JavaScript. -->
+        <code>
+            var innerBox = document.getElementById("box-model-box");
+            innerBox.innerText = "Hello world!";
+        </code>
+        <!-- Try typing the code above into the browser console. -->
+        
+        <h2>Inline Script</h2>
+        
+        <code><!-- This will show the code above wrapped in a script tag. --></code>
+        
+        <!-- The browser console is not the only place to execute JavaScript code. -->
+        <script></script>
+        <!-- Try copying and pasting the code above into this script tag. -->
+        
+        <h2>External Script</h2>
+        
+        <a href="js/main.js">js/main.js</a>
+        
+        <!-- Element styling can be modified too! -->
+        <script src="js/main.js"></script>
+        <!-- Try uncommenting the code in the file above. -->
+        
+        <h2>Events</h2>
+        
+        <!-- Controlling when things happen is just as important as being able to make things happen at all! -->
+        <button type="button" onclick="resetPage();">Reset</button>
+        
+    </body>
+</html>
