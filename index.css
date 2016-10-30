@@ -55,6 +55,13 @@ article#SDP {
     background-size: 100% auto;
 }
 
+article#speedtest {
+    background-image: url("index/speedometer.png");
+    background-position: left center;
+    background-size: auto 200%;
+    text-align: center;
+}
+
 main > footer {
     z-index: -1;
     clear: both;
