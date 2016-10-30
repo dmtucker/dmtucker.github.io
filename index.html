@@ -6,11 +6,12 @@
     <meta name="description" content="A Blog by David Tucker">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="author"  type="text/plain" href="humans.txt">
-    <link rel="license" type="text/plain" href="https://www.gnu.org/licenses/gpl.txt">
+    <link rel="license" type="text/plain" href="CC-BY-4.0">
     <link rel="icon" type="image/png" href="resources/brain.png">
     <link rel="stylesheet" href="resources/normalize.min.css">
     <link rel="stylesheet" href="resources/global.css">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index/hemispheres.css">
 </head>
 <body>
     <main id="main">
@@ -26,9 +27,96 @@
                 <option value="http://dmtucker.github.io/www.saroorindiancuisine.com/">www.saroorindiancuisine.com</option>
                 <option value="http://dmtucker.github.io/www.santacruzsound.com/">www.santacruzsound.com</option>
             </select>
+            <select onchange="window.location.href=this.value">
+                <option disabled="disabled" selected="selected">downloads</option>
+                <option value="original/assassins.png">Assassins Warrant - png</option>
+                <option value="original/assassins.xcf">Assassins Warrant - xcf</option>
+                <option value="original/BazaarGovernance.pdf">Bazaar Governance - pdf</option>
+                <option value="original/camp.m4v">Camp Concord 2010 Slideshow - m4v</option>
+                <option value="original/escalona.odt">Escalona Beer Pong Rules - odt</option>
+                <option value="original/escalona.pdf">Escalona Beer Pong Rules - pdf</option>
+                <option value="original/FLOSS.pages">FLOSS - pages</option>
+                <option value="original/FLOSS.pdf">FLOSS - pdf</option>
+                <option value="original/GSF.pdf">Geo-tagged Sensor Fusion - pdf</option>
+                <option value="original/HABit.odt">HABit - odt</option>
+                <option value="original/security.key">Information Security - key</option>
+                <option value="original/security.pdf">Information Security - pdf</option>
+                <option value="original/OpenFusion.pdf">OpenFusion - pdf</option>
+                <option value="original/Realization.midi">Realization - midi</option>
+                <option value="original/Realization.mp3">Realization - mp3</option>
+                <option value="original/TeamworkBlues.midi">Teamwork Blues - midi</option>
+                <option value="original/TeamworkBlues.mp3">Teamwork Blues - mp3</option>
+                <option value="original/TeamworkBlues.pdf">Teamwork Blues - pdf</option>
+            </select>
         </header>
-        <a href="cosmarium/"><section id="cosmarium"><h2>Cosmarium</h2></section></a>
-        <a href="original/"><section id="original"><h2>Originals</h2></section></a>
+        <div id="left">
+            <article id="about">
+                <img src="index/me.jpg" alt="David Tucker">
+                <h2>About</h2>
+                <p>
+                    <img src="index/slug.png" alt="banana slug">
+                    I graduated from <a href="https://www.soe.ucsc.edu/people/dmtucker">UC Santa Cruz</a>
+                    with degrees in <a href="https://ua.soe.ucsc.edu/sites/default/files/CE_11-12_0.pdf">Computer Engineering</a> (concentrating in Networks)
+                    and <a href="https://ua.soe.ucsc.edu/sites/default/files/CS_BA_11-12.pdf">Computer Science</a>.
+                    I also have an interest in <a href="original/security.pdf">security</a>
+                    and <a href="original/FLOSS.pdf">Open Source</a>.
+                    Check out my <a href="resume/">r&eacute;sum&eacute;</a> for more about me.
+                </p>
+            </article>
+            <!-- Do not post anything above the About article. -->
+            <article id="gjtk">
+                <img src="index/map.png" alt="map" class="octocat">
+                <h2 class="borderless">GeoJSON ToolKit</h2>
+                <p>
+                    While working on my <a href="#SDP">Senior Design project</a>,
+                    I found myself wanting some simple tools for working with <a href="http://geojson.org/">GeoJSON</a> data
+                    So, I wrote a validator and object counter and put them in a public <a href="https://github.com/dmtucker/gjtk">repository</a>.
+                    There are currently <a href="https://github.com/dmtucker/gjtk-py">Python</a> and <a href="https://github.com/dmtucker/gjtk-js">JavaScript</a> implementations,
+                    and they should be available on <a href="https://pypi.python.org/pypi/gjtk">PyPI</a> and <a href="https://www.npmjs.org/package/gjtk">npm</a>, respectively.
+                </p>
+            </article>
+            <article id="SDP">
+                <h2>Senior Design Project</h2>
+                <p>
+                    In response to a proposal made by <a href="https://www.llnl.gov/"><abbr title="Lawrence Livermore National Laboratory">LLNL</abbr></a>
+                    for a system that could fuse data and interact with networked sensors,
+                    our team built a <a href="https://itunes.apple.com/us/app/gsfdatacollecter/id886092582">mobile application</a>
+                    and a <a href="http://gsf.soe.ucsc.edu/">web application</a> to interface a custom pluggable sensor and a remote database.
+                    Gathered data can be merged with publicly available information (e.g. <a href="https://twitter.com/">Twitter</a>) to allow users to compare and relate large amounts of data.
+                    More details are available in our <a href="original/GSF.pdf">poster</a> and <em>even more</em> in our <a href="original/OpenFusion.pdf">report</a>.
+                </p>
+                <p>
+                    As Fusion/Visualization Lead and Treasurer, I contributed code and graphics while managing our budget (approximately $2500).
+                    More specifically, I built <a href="https://github.com/dmtucker/ogre"><abbr title="OpenFusion GIS Retriever">OGRe</abbr></a>,
+                    a <a href="https://pypi.python.org/pypi/OGRe">library</a> for fetching data from 3rd-party APIs,
+                    and <a href="https://github.com/dmtucker/vizit">Vizit</a>,
+                    a <a href="http://dmtucker.github.io/vizit/?data=example/test.geojson">visualizer</a> that can render any <a href="http://geojson.org/">GeoJSON</a> file.
+                </p>
+            </article>
+            <article id="speedtest">
+                <h2>Ookla SPEEDTEST Personal Record</h2>
+                <img src="https://www.speedtest.net/result/5398270527.png" alt="803.92Mbps/494.17Mbps/1ms">
+            </article>
+        </div>
+        <div id="right">
+            <article id="camp_slideshow">
+                <h2 class="hidden">Camp Concord 2010</h2>
+                <video controls>
+                    <source src="original/camp.m4v" type="video/mp4">
+                    Your browser does not support HTML5.
+                </video>
+            </article>
+            <article id="assassins">
+                <img src="index/dojocat.png" alt="dojocat" class="octocat">
+                <h2 class="borderless">Assassins</h2>
+                <p>
+                    Looking to start a game of <a href="https://en.wikipedia.org/wiki/Assassin_(game)">Assassins</a>?
+                    I have created a <a href="https://github.com/dmtucker/gizmos/blob/master/targetter.py">tool for creating round orders</a> and a <a href="original/assassins.png">warrant</a>.
+                    Friends and I successfully played games at my high school and college (although the dorms required some extra rules).
+                </p>
+            </article>
+        </div>
+        <footer><a href="#main"><!-- Return to the top. --></a></footer>
     </main>
 </body>
 </html>
