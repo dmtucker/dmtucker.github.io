@@ -47,6 +47,7 @@ main article > p {
 }
 
 main > div {
+    margin-bottom: 2em;
     width: 50%;
 }
 
