@@ -6,4 +6,4 @@ branches:
     - master
 install:
   - pip install --user html5validator
-script: html5validator --show-warnings --root .
+script: html5validator --show-warnings --match index.html --root .
