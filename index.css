@@ -19,4 +19,5 @@ img {
 
 img[alt="David Tucker"] {
     border-radius: 50%;
+    max-height: 100%;
 }
