@@ -6,4 +6,7 @@ branches:
     - master
 install:
   - pip install --user html5validator
-script: html5validator --show-warnings --match index.html --root .
+script:
+  - html5validator --show-warnings --match index.html --root .
+  - gpg --recv-keys A3E0EF6CECB33C342AA6EC7C5508153A6E7FC5FB
+  - gpg --verify index.html.asc index.html
