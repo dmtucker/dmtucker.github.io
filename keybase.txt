@@ -1,0 +1,73 @@
+==================================================================
+https://keybase.io/dmtucker
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://david.tucker.name
+  * I am dmtucker (https://keybase.io/dmtucker) on keybase.
+  * I have a public key with fingerprint A3E0 EF6C ECB3 3C34 2AA6  EC7C 5508 153A 6E7F C5FB
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01017ae6c59bcba7592e0eb4ffe29c905a80a3d30717328853fc5eeff493e8e8d1cd0a",
+            "fingerprint": "a3e0ef6cecb33c342aa6ec7c5508153a6e7fc5fb",
+            "host": "keybase.io",
+            "key_id": "5508153a6e7fc5fb",
+            "kid": "01017ae6c59bcba7592e0eb4ffe29c905a80a3d30717328853fc5eeff493e8e8d1cd0a",
+            "uid": "c4d88e92db6fada2551c34fa6a359719",
+            "username": "dmtucker"
+        },
+        "service": {
+            "hostname": "david.tucker.name",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1495953303,
+    "expire_in": 157680000,
+    "prev": "7e18e970664f5d8d7a93543d976db3764e813dbe7ed544e831f75b1f35e04287",
+    "seqno": 6,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owGtUm1QVFUYXgR0I2BcZoCSRLg7pBEy9+65536sCGgEjDCSEJTCuNyPc+HCsot7
+lw0jShvAJRsMRYGQ0jYsiWnGoVCHdlo3pFCsoWmyRiswcqDBWDZmSJ2suxT/+tn5
+c+Z9zvM853nfed+ICNZog4q10UbLK5fvB12d5TW7k60fNGC8VdyPGRuwarR8IbOI
+FLupWhYxI4YTOEFziBIgyws8R0PWgHDEk5KEDKzA4pBjcA6IAKcJGhgYBgJJgAhJ
+EskCxCBGJAQR57AUTJItFchWa5MtdtWWA6qLRAlI4AEQAGngOAoJtAAhzhAQqAWt
++ki8Kqy0KgGFGo7nFJQqW1VMLUzL8f6D/z/nrlu2E0iRYRBrEHlK4kTOACGhppY4
+igOQpQk2QFSQzcLVIJUt1tjrhGpkwxpTMBV1yAIKDDbQyQqDc8hi6j+s1GUsBau1
+We1WwWpWnyvt9lpjQG3fXxugv4B4079GJl62iOosVYED2RTZasGMhMoU7HLAmSBZ
+yEIAcJCCofpa2YZMcoABaYrB1RP4BjlUSxoRZWpHNE5RpARFRqQ5FkASiCxNiTyg
+KRIxBBB5RCMRkmoBCImGPCEBiHDSwNBYoLd9FitmpNScXIXqqcgVFs5eZ0NYY1jr
+KhCiCdJq1sckhrgm581zg2lk8pm5l1b2L3RVYPk0YQ+tXUHKPl2r6R/4yz/zSMsF
+4ujtibb4675Qw/RN3u2qfjzj2QMzx/3jU4qSQ5733rFTxonFO6K8qWm4e1jo+qSj
+wL1YNOCb+9iRk/b2UOZW6lhsVTbcvu3Pc1/0pPnOvZX7XNmGTlc50eie+ogfuNFb
+6BXqdatL23t/r7rsf9qavdA1X9K7Xp8btzNvWltlzkgIbzn/49cV9IZvNsbGdX21
+cXRncrB/6ee02cis40urxc3jpXj+yc972n7yjZ/Uj0SMnd7l6daPnUo+pbycFF/V
+094asv39prylucmSxkWPLz3nw82UPFHXrDM4vQ33EvaWPhjM6dN3F5+4jRR9omd6
+b4euviXJmRB6+rWrhjUxB/WPFcDMF6cjzrijTMWddbqsNvmzX5bO1uQXhh3pS3CM
+NNTEeaH4aPq0LnohcU9S87prVyzXvSNFYfOC84Z09/D4YHH0HxfdacZyad7Vqolg
+dfmzSqR7i4s+MdoSLG8VHjhHmuYq775aMqo75DN6+n+LivG/812f88uQmbas4TWv
+d3vGbz0VX/hkeZT8PPZt/6aD6ZO4f9+2yMlngt+7wglvDg21bDGxzRnmgo4je5Tc
+Gg84UHxpF7ywO+xYzLWjY1FaV7U+JO+isq498d0fisKzYy+1aw/tKFzInL5/9uFb
+30+Fmzvv/Xr4CW9vqdO/w9kZDCiKuanYxL8B
+=B5HT
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/dmtucker
+
+==================================================================
+
