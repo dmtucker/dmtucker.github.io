@@ -1,8 +1,8 @@
 body {
   position: relative;
   background-image: url("index/tricolorful.jpg");
-  background-size: 100% 100%;
   background-attachment: fixed;
+  background-repeat: repeat;
   text-align: center;
 }
 
@@ -21,7 +21,7 @@ main > a {
   border-radius: 0.5em;
   width: 10em;
   height: 10em;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 main > a > * {
