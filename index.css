@@ -1,6 +1,7 @@
 body {
   position: relative;
-  background-image: url("index/tricolorful.jpg");
+  background-color: white;
+  background-image: url("index/tricolorful.png");
   background-attachment: fixed;
   background-repeat: repeat;
   text-align: center;
