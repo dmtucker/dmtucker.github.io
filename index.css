@@ -5,36 +5,31 @@ body {
   text-align: center;
 }
 
-body > * {
-  margin: 1em;
+header, footer {
+  padding: 1em;
 }
 
-body > hr {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-  border: none;
-  height: 0.1em;
+main {
+  border-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)) 1;
+  border-width: 0.1em 0;
+  border-style: solid;
+  display: inline-block;
   margin: auto;
   max-width: 80%;
-  width: 40em;
+  padding: 0.5em;
 }
 
-body > main > a {
-  background-color: rgba(0, 0, 0, 0.6);
+main > a {
   border-radius: 0.5em;
-  color: white;
   display: inline-block;
-  height: 10em;
   margin: 0.5em;
+  max-height: 10em;
+  max-width: 10em;
   overflow: hidden;
-  position: relative;
-  width: 10em;
+  vertical-align: middle;
 }
 
-body > main > a > * {
-  left: 50%;
-  max-height: 100%;
-  max-width: 100%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
+main > a > img {
+  height: 100%;
+  width: 100%;
 }
