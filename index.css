@@ -1,5 +1,5 @@
 body {
-  background: #2e3436 url("index/noise-texture.png");
+  background: darkslategray url("index/noise-texture.png");
   background-attachment: fixed;
   background-repeat: repeat;
   text-align: center;
