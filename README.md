@@ -2,7 +2,7 @@
 
 The Personal Website of David Tucker
 
-[![Build Status](https://img.shields.io/travis/dmtucker/dmtucker.github.io.svg)](https://travis-ci.org/dmtucker/dmtucker.github.io)
+[![Build Status](https://img.shields.io/travis/dmtucker/dmtucker.github.io.svg)](https://travis-ci.org/dmtucker/dmtucker.github.io) [![Docker Build Status](https://img.shields.io/docker/build/dmtucker/dmtucker.github.io.svg)](https://hub.docker.com/r/dmtucker/dmtucker.github.io/)
 
 ## Deployment
 
