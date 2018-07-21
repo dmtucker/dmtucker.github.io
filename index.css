@@ -1,6 +1,6 @@
 body {
-  background: darkslategray url("index/noise-texture.png");
   background-attachment: fixed;
+  background-image: url("index/noise-texture.png"), linear-gradient(to bottom, lightslategray, #2e3436);
   background-repeat: repeat;
   text-align: center;
 }
