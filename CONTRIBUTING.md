@@ -2,20 +2,22 @@
 
 [GitHub](https://github.com/) hosts the project.
 
-[![GitHub repo size](https://img.shields.io/github/repo-size/dmtucker/dmtucker.github.io.svg)](https://github.com/dmtucker/dmtucker.github.io)
-
 ## Development
 
-Discuss changes by [creating an issue](https://help.github.com/articles/creating-an-issue).
+Develop changes by [forking](https://help.github.com/articles/fork-a-repo) and [cloning](https://help.github.com/articles/cloning-a-repository) this repository.
 
-[![GitHub issues](https://img.shields.io/github/issues/dmtucker/dmtucker.github.io.svg)](https://github.com/dmtucker/dmtucker.github.io/issues)
+[![GitHub forks](https://img.shields.io/github/forks/dmtucker/dmtucker.github.io.svg)](https://github.com/dmtucker/dmtucker.github.io/network/members)
+[![GitHub repo size](https://img.shields.io/github/repo-size/dmtucker/dmtucker.github.io.svg)](https://github.com/dmtucker/dmtucker.github.io)
 
 ### Version Control
 
-Use [`git`](https://git-scm.com/doc) to retrieve and manage the project source code.
+Use [`git`](https://git-scm.com/doc) to manage the project source code.
 
 ``` sh
-git clone https://github.com/dmtucker/dmtucker.github.io.git
+git add -p
+git status
+git commit -S
+git log
 ```
 
 ### Test Environment
@@ -28,34 +30,27 @@ docker run -p 8008:80 dmtucker/dmtucker.github.io:dev  # Deploy the project.
 # http://localhost:8008/
 ```
 
-## Merges
+## Continuous Integration
 
+Discuss changes by [creating an issue](https://help.github.com/articles/creating-an-issue).
 Propose changes by [creating a pull request](https://help.github.com/articles/creating-a-pull-request/).
 
+[![GitHub issues](https://img.shields.io/github/issues/dmtucker/dmtucker.github.io.svg)](https://github.com/dmtucker/dmtucker.github.io/issues)
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/dmtucker/dmtucker.github.io.svg)](https://github.com/dmtucker/dmtucker.github.io/pulls)
 
-- [Branch protection](https://help.github.com/articles/about-protected-branches/) enforces acceptance criteria.
-- [Milestones](https://help.github.com/en/articles/about-milestones) serve as a changelog for the project.
-- [Labels](https://help.github.com/en/articles/about-labels) track the intent of each change.
+### Automation
 
-### Continuous Integration
+[Docker Cloud](https://cloud.docker.com/) builds, tests, and deploys the project to [Docker Hub](https://hub.docker.com/).
 
-[Travis CI](https://travis-ci.com/) builds, tests, and deploys the project automatically.
-
-[![Travis (.com) branch](https://img.shields.io/travis/com/dmtucker/dmtucker.github.io/master.svg)](https://travis-ci.com/dmtucker/dmtucker.github.io)
+[![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/dmtucker/dmtucker.github.io.svg)](https://cloud.docker.com/repository/docker/dmtucker/dmtucker.github.io)
+[![Docker Pulls](https://img.shields.io/docker/pulls/dmtucker/dmtucker.github.io.svg)](https://hub.docker.com/r/dmtucker/dmtucker.github.io)
 
 ## Releases
 
-Distribute changes by [creating a release](https://help.github.com/en/articles/creating-releases).
+Publish changes by [creating a release](https://help.github.com/articles/creating-releases).
 
 [![GitHub release](https://img.shields.io/github/release/dmtucker/dmtucker.github.io.svg)](https://github.com/dmtucker/dmtucker.github.io/releases)
 
-1. [Change the version.](http://semver.org/)
+1. [Change the version.](https://semver.org/)
 2. [Create a tag.](https://git-scm.com/book/en/v2/Git-Basics-Tagging)
-3. [Release the tag.](https://help.github.com/en/articles/creating-releases)
-
-### Package Repository
-
-[Docker Hub](https://hub.docker.com/) distributes releases.
-
-[![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/dmtucker/dmtucker.github.io.svg)](https://cloud.docker.com/repository/docker/dmtucker/dmtucker.github.io)
+3. [Release the tag.](https://help.github.com/articles/about-releases)
