@@ -1,7 +1,8 @@
-FROM python:3.5-stretch AS test
+FROM python:3.7-stretch AS test
 RUN apt update && apt install -y gnupg openjdk-8-jre
-RUN pip install 'html5validator ~= 0.3.1'
-RUN gpg --recv-keys A3E0EF6CECB33C342AA6EC7C5508153A6E7FC5FB
+RUN pip install 'html5validator ~= 0.4.0'
+RUN gpg --keyserver keyserver.ubuntu.com --recv-keys A3E0EF6CECB33C342AA6EC7C5508153A6E7FC5FB
+RUN gpg --keyserver keyserver.ubuntu.com --refresh-keys
 WORKDIR david.tucker.name
 COPY . .
 RUN gpg --verify index.html.asc index.html

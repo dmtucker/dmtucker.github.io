@@ -10,11 +10,18 @@
     <link rel="license" type="text/plain" href="LICENSE">
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="index.css">
+    <script>
+        function redirectToSelection(select) {
+            value = select.value;
+            select.selectedIndex = 0;  // The default should always be selected.
+            window.location.href = value;
+        }
+    </script>
 </head>
 <body>
     <header>
         https://
-        <select onchange="window.location.href=this.value">
+        <select onchange="redirectToSelection(this)">
             <option value="https://david.tucker.name/" selected="selected">david.tucker.name</option>
             <option value="https://dmtucker.github.io/www.bayfitted.com/">www.bayfitted.com</option>
             <option value="https://dmtucker.github.io/www.joycefreeman.com/">www.joycefreeman.com</option>
@@ -22,7 +29,7 @@
             <option value="https://dmtucker.github.io/www.santacruzsound.com/">www.santacruzsound.com</option>
         </select>
         /
-        <select onchange="window.location.href=this.value">
+        <select onchange="redirectToSelection(this)">
             <option value="index.html" selected="selected">index.html</option>
             <option value="index.html.asc">index.html.asc</option>
             <option value="keybase.txt">keybase.txt</option>
@@ -32,7 +39,7 @@
     <main>
         <a href="mailto:david@tucker.name"><img src="https://www.gravatar.com/avatar/878f7ef4956f65e8826b1ab4bec1ddae?s=500" alt="David Tucker"></a>
         <a href="https://keybase.io/dmtucker"><img src="index/Keybase.png" alt="Keybase"></a>
-        <a href="https://www.soe.ucsc.edu/people/dmtucker"><img src="index/BSOE.png" alt="UCSC"></a>
+        <a href="https://engineering.ucsc.edu/people/dmtucker"><img src="index/BSOE.png" alt="UCSC"></a>
     </main>
     <footer>
         <samp>0xA3E0EF6CECB33C342AA6EC7C<wbr>5508153A6E7FC5FB</samp>
